@@ -1,56 +1,137 @@
 <?php
-include("config.php");
-$transaction = new AuthorizeNetAIM;
-$transaction->setSandbox(AUTHORIZENET_SANDBOX);
-$transaction->setFields(
-    array(
-        'amount' => '1.99',
-        'card_num' => '4389610000563816',
-        'exp_date' => '05/14',
-        'first_name' => 'Robert',
-        'last_name' => 'Ortega',
-        'address' => '527 Atascadero Road',
-        'city' => 'Morro Bay',
-        'state' => 'CA',
-        'country' => 'US',
-        'zip' => '93442',
-        'card_code' => '827',
-    )
-);
-//echo (AUTHORIZENET_SANDBOX ? AuthorizeNetDPM::SANDBOX_URL : AuthorizeNetDPM::LIVE_URL);
-// Authorize Only:
-$response  = $transaction->authorizeOnly();
+require("config.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CiCi autobot - v1.0 - build 20140412</title>
+    <meta charset="utf-8"
+    <meta property="fb:app_id" content="753308934688020"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap-responsive.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap-theme.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/datepicker.css">
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>style.css">
+</head>
+<body>
+<h1 class="text-center">CiCi AUTOBOT <label class=" label label-primary">V1.0</label></h1>
+<br>
+<div class="col-xs-12 col-md-6">
+    <button class="btn btn-sm btn-success  pull-right" onclick="getinfo()"><span class="glyphicon glyphicon-info-sign"></span> Lấy thông tin</button>
+    <div class="clearfix"></div>
+    <br>
+    <fieldset>
+        <legend>Cấu hình đọc file </legend>
+        <label>Ký tự phân cách </label>
+        <input id="ccsplit" placeholder="" value="|" style="width: 30px" class="text-center">
+        <label>Mã thẻ </label>
+        <input id="ccnumber" placeholder="cột mã thẻ" value="1" style="width: 30px" class="text-center">
+        <label>Tháng </label>
+        <input id="ccmonth" placeholder="cột tháng" value="2" style="width: 30px" class="text-center">
+        <label>Năm </label>
+        <input id="ccyear" placeholder="cột năm" value="3" style="width: 30px" class="text-center">
+        <input id="ccdatesplit" placeholder="" value="/" style="width: 30px" class="text-center">
+        <label>CCV </label>
+        <input id="ccv" placeholder="cột CCV " value="4" style="width: 30px" class="text-center">
+       <br>
+        <label>F name </label>
+        <input id="ccfname" placeholder="cột first name " value="5" style="width: 30px" class="text-center">
+        <label>L name </label>
+        <input id="cclname" placeholder="cột last name " value="6" style="width: 30px" class="text-center">
+        <label>Addr </label>
+        <input id="ccaddr" placeholder="cột địa chỉ " value="7" style="width: 30px" class="text-center">
+        <label>City </label>
+        <input id="cccity" placeholder="cột thành phố " value="8" style="width: 30px" class="text-center">
+        <label>State</label>
+        <input id="ccstate" placeholder="cột bang " value="9" style="width: 30px" class="text-center">
+        <label>Country</label>
+        <input id="cccountry" placeholder="cột quốc gia " value="10" style="width: 30px" class="text-center">
+        <label>Zip</label>
+        <input id="cczip" placeholder="cột zip " value="11" style="width: 30px" class="text-center">
+    </fieldset>
+    <br>
+    <textarea style="width: 100%;min-height: 300px" id="input"></textarea>
+</div>
+<div class="col-xs-12 col-md-6">
+    <button class="btn btn-sm btn-success  pull-right"><span class="glyphicon glyphicon-play"></span> Run</button>
+    <div class="clearfix"></div>
+    <br>
+    <fieldset>
+        <legend>Thông tin </legend>
+        <table class="table table-responsive table-bordered">
+            <thead>
+            <th>STT</th>
+            <th>Mã thẻ</th>
+            <th>Ngày</th>
+            <th>CCV</th>
+            <th>Auth</th>
+            <th>Paid</th>
+            <th>Refund</th>
+            </thead>
+            <tbody id="tablecontent">
 
-if ($response->approved) {
-    $auth_code = $response->transaction_id;
-    echo 'auth_code='.$auth_code.'<pre>';
-    print_r($response);
-    echo '</pre>';
+            </tbody>
+        </table>
+    </fieldset>
 
-    // Now capture:
-    $capture = new AuthorizeNetAIM;
-    $capture->setSandbox(AUTHORIZENET_SANDBOX);
-    $capture_response = $capture->priorAuthCapture($auth_code);
-    echo '<br>capture response = <pre>';print_r($capture_response);
-    echo '</pre>';
+</div>
+</body>
+</html>
+<script src="<?php echo $site_root;?>jquery.js"></script>
+<script src="<?php echo $site_root;?>bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo $site_root;?>bootstrap/js/bootstrap-datepicker.js"></script>
+<script>
+    function getinfo(){
+        if($("#input").val().trim()!=''){
+            $("#tablecontent").html("");
+            var input = $("#input").val();
+            var arrLines = input.split("\n");
+            for(var i=0;i<arrLines.length;i++){
+                if(arrLines[i].trim()!=''){
+                    var arrCols = arrLines[i].split($("#ccsplit").val());
+                    var html = '<tr>' +
+                               '<td>'+(i+1)+'</td>' +
+                               '<td><input id="waitnumber'+(i+1)+'" value="'+arrCols[($('#ccnumber').val())]+'"></td>';
+                    if(arrCols[($('#ccmonth').val())].indexOf("/") > 0){
+                        var aDate = arrCols[($('#ccmonth').val())].split("/");
+                        var month = aDate[0];
+                        if(parseInt(month)<10) month = "0"+month;
+                        var year = aDate[1];
+                        year = year.substr((year.length-2),2);
+                        html+=     '<td><input id="waitdate'+(i+1)+'" value="'+month+'/'+year+'" style="width:50px"></td>';
+                    }
+                    else if($('#ccmonth').val() != $('#ccyear').val() ){
+                        var month = arrCols[$('#ccmonth').val()];
+                        if(parseInt(month)<10) month = "0"+month;
+                        var year = arrCols[($('#ccyear').val())];
+                        year = year.substr((year.length-2),2);
+                        html+=     '<td><input id="waitdate'+(i+1)+'" value="'+month+'/'+year+'" style="width:50px"></td>';
+                    }
+                    else{
+                        var aDate = arrCols[$('#ccmonth').val()].split("/");
+                        var month = aDate[0];
+                        if(parseInt(month)<10) month = "0"+month;
+                        var year = aDate[1];
+                        year = year.substr((year.length-2),2);
+                        html+=     '<td><input id="waitdate'+(i+1)+'" value="'+month+'/'+year+'" style="width:50px"></td>';
+                    }
 
-    // Now void:
-    $void = new AuthorizeNetAIM;
-    $void->setSandbox(AUTHORIZENET_SANDBOX);
-    $void_response = $void->void($capture_response->transaction_id);
-    echo '<br>void = <pre>';print_r($void_response);
-    echo '</pre>';
-}
-else{
-    echo 'not authorize';
-}
+                    html+=     '<td><input id="waitccv'+(i+1)+'" value="'+arrCols[($('#ccv').val())]+'"  style="width:50px"></td>' +
+                               '<td></td>' +
+                               '<td></td>' +
+                               '<td></td>' +
+                               '</tr>'
+                    $("#tablecontent").append(html);
+                }
+            }
+        }
 
-/*
- *  248750|4231907246438344|1|2017|303| |Jennifer N Gillman|Nicole N Tim|Gillman|158 McGougin Rd|Brewton|36426|Alabama (AL)|US|2512305146
-248047|5517390003577707|8|2016|841| |Mary E Popovich|Mary|Popovich|119 N. Third Street|West Newton|15089|Pennsylvania (PA)|US|7249723779
-247919|5517390003577707|8|2016|841| |Mary E Popovich|Mary|Popovich|119 N. Third Street|West Newton|15089|Pennsylvania (PA)|US|7249723779
-247761|4355480300312474|12|2014|841| |Roger A Kirschenbaum|Roger|Kirschenbaum|6745 Ridge Mill Lane|Atlanta|30328|Georgia (GA)|US|4042192664
- * 4494653283889716 | 04 | 2015 | 550 | Robert Ortega | 527 Atascadero Road | Morro Bay | CA | 93442 |8059344212 |
-4465400073970875 | 07 | 2014 | 126 | Kelly Weber | 423 Cuesta Dr | Slo | CA | 93405 | | 5104684716||
- */
+    }
+</script>
+
+
+
 
