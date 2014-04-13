@@ -19,7 +19,7 @@ define("TEST_REQUEST", "FALSE");           // You may want to set to true if tes
 
 // You only need to adjust the two variables below if testing DPM
 define("AUTHORIZENET_MD5_SETTING","");                // Add your MD5 Setting.
-$site_root = "http://mywww.authorize/"; // Add the URL to your site
+$site_root = "http://localhost/authorize/"; // Add the URL to your site
 
 
 if (AUTHORIZENET_API_LOGIN_ID == "") {
