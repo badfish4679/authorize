@@ -1,0 +1,291 @@
+﻿<style>
+body{
+	background-color: #F0FCE9;
+	color: #0F0317;
+	font-family:"Courier New", Courier, monospace;
+	font-size:13px
+}
+
+A:link {color: blue;}
+A:visited {color: blue;}
+A:active {color: blue;}
+A:hover {color: blue;}
+
+textarea,input,select
+{
+	background:#ddf8cc;
+	color:darkgreen;
+	border:dashed thin #80c65a;
+}
+
+iframe.main { margin:0; padding:0; height:95%; display:block; width:100%; border:0; }
+
+#sddm
+{	
+	margin: 0;
+	padding: 0;
+	z-index: 30;
+}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 5px 0 0;
+	padding: 7px 10px;
+	background:#fff url(img/image_drop_back.gif);
+	color: #FFF;
+	font-family:arial, sans-serif; font-size:11px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#sddm li a:hover
+{
+	background: url(img/image_drop_1b.gif) right top;
+	color: #FFF;
+}
+
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+
+#sddm div a
+{	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background:#fff url(img/drop_0.gif);
+	color: #000;
+	font: 11px arial
+}
+
+#sddm div a:hover
+{	background: url(img/drop_1.gif);
+	color: #000
+}
+	
+#multi {height:30px; position:relative; z-index:100; background:#fff url(img/image_drop_back.gif) repeat-x; padding-left:20px;border:1px solid #000; border-width:0 1px;}
+</style>
+		<script type="text/javascript" language="JavaScript">
+			var loadingText="<center><font size=+0><img src='progress.gif'> &#272;ang th&#7921;c hi&#7879;n <img src='progress.gif'></font></center>";
+			var _ajax;
+			var current_url = '';
+			var c_act="none";
+			var timmerx=0,timmerxt=10;
+			function createXMLHttpRequest(){
+				var xmlHttp=null;
+				try{
+					xmlHttp=new XMLHttpRequest()
+				}catch (e){
+					try{
+						xmlHttp=new ActiveXObject("Msxml2.XMLHTTP")
+					}catch (e){
+						try{
+							xmlHttp=new ActiveXObject("Microsoft.XMLHTTP")
+						}catch (e){
+							return null
+						}
+					}
+				};
+				return xmlHttp
+			};
+			function preloadImages() { var d=document; if(d.images){ if(!d.IWS_p) d.IWS_p=new Array();var i,j=d.IWS_p.length,a=preloadImages.arguments; for(i=0; i<a.length; i++)if (a[i].indexOf("#")!=0){ d.IWS_p[j]=new Image; d.IWS_p[j++].src=a[i];}}}(Array('http://legendwindz.com/progress.gif'))
+			function getObj(_obj){
+				var _objCursor;
+				if(document.all){
+					_objCursor=document.all(_obj)
+				}else{
+					if(document.getElementById){
+						_objCursor=document.getElementById(_obj)
+					}else{
+						_objCursor=false
+					}
+				};
+				return _objCursor
+			};
+			function ENM(v_sid){return eval("document."+v_sid);}
+			function EID(v_sid){return getObj(v_sid);}
+			function CheckN(s,nmax)
+			{
+				if (s.replace(/[0-9]/g,"")==""){
+					if(parseInt(s)>=0 && parseInt(s)<=parseInt(nmax))
+						return true;
+					else return false;
+				}
+				else return false;
+			};
+			function obj_setfocus(obj___id)
+			{
+				//alert(document.body.scrollHeight+";"+document.body.clientHeight+";"+document.body.scrollTop+";"+document.body.scrollTop+document.body.clientHeight);
+				if(document.body.scrollHeight==document.body.clientHeight)
+				{
+					try{
+						__OBJ_FOOTER__.focus();
+						__OBJ_FOOTER__FF.e.focus();
+						//document.body.scrollTop=document.body.scrollHeight;
+						eval("s1="+obj___id+".innerHTML;if(!document."+obj___id+"FF) "+obj___id+".innerHTML='<FORM name="+obj___id+"FF style=\"margin-top: 0px; margin-bottom: 0px;\"><INPUT name=e style=\"width: 0px; height: 0px; border-left: #FFFFFF; border-right: #FFFFFF;\"></FORM>'+"+obj___id+".innerHTML;"+obj___id+".focus();document."+obj___id+"FF.e.focus();"+obj___id+".innerHTML=s1;document."+obj___id+"FF=0;");
+						eval("s1="+obj___id+".innerHTML;if(!document."+obj___id+"FF) "+obj___id+".innerHTML='<FORM name="+obj___id+"FF style=\"margin-top: 0px; margin-bottom: 0px;\"><INPUT name=e style=\"width: 0px; height: 0px; border-left: #FFFFFF; border-right: #FFFFFF;\"></FORM>'+"+obj___id+".innerHTML;"+obj___id+".focus();document."+obj___id+"FF.e.focus();"+obj___id+".innerHTML=s1;document."+obj___id+"FF=0;");
+					}catch(E){}
+				}else{
+					var vitri_top = getObj(obj___id).offsetTop;
+					document.body.scrollTop=vitri_top;
+				};
+			};
+			function scrool_auto() {try{/*document.body.scrollTop=document.body.scrollHeight;*/obj_setfocus("__OBJ_FOOTER__");}catch(E){};}
+			function sizetofix(nelem){
+				elem=ENM(nelem);
+				elem.size=elem.value.length;
+			}
+			function InitClassInput(nelem){
+				elem=ENM(nelem);
+				elem.onchange=elem.onkeyup=elem.onblur="sizetofix('"+nelem+"')"
+			}
+			function DoSendRequest(_fform,dispdiv,step,zxiframe)
+			{
+				var a=encodeURIComponent||escape;
+				fform=eval("document.frm_"+_fform);
+				c_act=_fform;
+				if(dispdiv) c_act=dispdiv;
+				s='nocachemnkmkjhkhknkjsfbnlfds=' + (5 * Math.random() * 1.33)+'&'; if(step) fform.step.value=step;
+				for(var x=0; x < fform.elements.length; x++ ){
+					var y = fform.elements[x];
+					if(y.name){
+						if(y.type=="select-multiple")
+						{
+							s+=y.name+"=";
+							for(var z=0;z<y.length;z++){
+								if(y.options[z].selected==true) s+=a(y.options[z].value)+",:,";
+							}
+							s=s.substr(0,s.length-3);
+							s+="&";
+						}else if(y.type=="checkbox")
+							s+=y.name+"="+(y.checked?"true":"false")+"&";
+						else if(y.type=="radio")
+							{if(y.checked) s+=y.name+"="+a(y.value)+"&";}
+						else if(y.type=="textarea")
+							s+=y.name+"="+a(y.innerHTML||y.value)+"&";
+						else{
+							s+=y.name+"="+a(y.value)+"&";
+						}
+					}
+				};
+				if(!zxiframe){
+					sendRequest(c_act,s);
+				}else{
+					act=c_act;
+					getObj("div_"+act).innerHTML = "<div id=div2_"+act+" style='text-align:center;'></div><iframe name='iframe_"+act+"' id='iframe_"+act+"' src='about:blank' onload='' style='height:40%;'>";
+					while(!EID("iframe_"+act));
+					fform.target="iframe_"+c_act;
+					fform.method="POST";
+					//EID('div2_'+act).innerHTML=loadingText;
+					//EID("iframe_"+act).onload="EID('div2_"+act+"').innerHTML=''";
+					fform.submit();
+				}
+			}
+			function iDoSendRequest(_fform,dispdiv,step)
+			{
+				DoSendRequest(_fform,dispdiv,step,true)
+			}
+			function sendRequest(act,param) {
+				try{
+					_ajax = createXMLHttpRequest();
+					if(!_ajax){
+						getObj("div_"+act).innerHTML = "Tr&#236;nh duy&#7879;t c&#7911;a b&#7841;n kh&#244;ng h&#7895; tr&#7907; Ajax.";
+						return;
+					}
+					getObj("div_"+act).innerHTML = loadingText;
+					getObj("div_"+act).style.display = "block";
+					_ajax.open('POST',  window.location);
+					_ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+					_ajax.onreadystatechange = handleResponse;
+					_ajax.send(param);
+				}
+				catch(e){}
+				finally{}
+			}
+			function handleResponse() {
+				try {
+					if(_ajax.readyState == 4){
+							if(_ajax.status == 200){
+								_div="div_"+c_act;
+								if(_ajax.responseText.indexOf('#STATUS#')>0){
+									_array=_ajax.responseText.split('#');_code=_array[2];_msg=_array[3];
+									if(_code=='ERROR'){
+										getObj(_div).innerHTML='Kh&#244;ng th&#224;nh c&#244;ng';
+									};
+									if(_code=='SUCCESS'){
+									}
+								}else{
+									getObj(_div).innerHTML=_ajax.responseText;
+									_ajax=null;
+								};
+							}else{
+								if(_ajax.status >= 400){
+									getObj(_div).innerHTML='M&#7845;t k&#7871;t n&#7889;i t&#7899;i m&#225;y ch&#7911;';
+								};
+							}
+						_ajax=null;
+						}
+			  }
+				catch(e){}
+				//finally{}
+			};
+			function DoSearchCC(result_div,left_div,cc,bin){
+				bin=""+bin;
+				b_Search_bin=(bin!="")
+				bin=bin.split(";")
+				cc=cc.split("\n");
+				s="";
+				q="";
+				for(i=0;i<cc.length;i++){
+					bf=false||!b_Search_bin;
+					if(b_Search_bin) for(j=0;j<bin.length;j++){p=cc[i].toLowerCase().indexOf(bin[j].toLowerCase());if(p>-1&&("0"<=bin[1]<="9")||p==0) {bf=true;break;}}
+					if(bf==true) 
+						{
+						s+=cc[i]+"\n";
+						}
+					else
+						{
+						q+=cc[i]+"\n";
+						}
+				}
+				EID(result_div).innerHTML="<center>C&#225;c d&#242;ng c&#243; ch&#7919;a chu&#7895;i c&#7847;n t&#236;m: <a href='javascript:getObj(\"result_div\").focus();getObj(\"result_div\").select();'>Ch&#7885;n t&#7845;t c&#7843;</a><br><textarea rows=10 style='width:90%' id=result_div style='border:dotted 1 red;overflow:scroll;'>"+s+"</textarea></center>"
+				EID(left_div).innerHTML="<center>C&#225;c d&#242;ng c&#242;n l&#7841;i kh&#244;ng c&#243; chu&#7895;i c&#7847;n t&#236;m: <a href='javascript:getObj(\"result_left\").focus();getObj(\"result_left\").select();'>Ch&#7885;n t&#7845;t c&#7843;</a><br><textarea rows=10 style='width:90%' id=result_left style='border:dotted 1 red;overflow:scroll;'>"+q+"</textarea></center>"
+			}
+			function ShowHelp(s){
+				return false;
+			}
+		</script>
+<h4>B&#7841;n h&#227;y nh&#7853;p d&#7919; li&#7879;u (m&#7895;i d&#242;ng l&#224; 1 d&#7919; li&#7879;u):</h4><br>
+		<form id=frm_Search_cc onsubmit='return false;'>
+			<textarea style="width:90%" rows=10 name=cc></textarea><br>
+			<i><font color=red>Vi&#7879;c l&#7885;c n&#224;y &#273;&#7873;u d&#249;ng Javascript tr&#234;n m&#225;y b&#7841;n n&#234;n kh&#244;ng s&#7907; b&#7883; log Data.</font></i><br>
+			<h4>T&#249;y Ch&#7885;n:</h4>
+			T&#236;m chu&#7895;i (Kh&#244;ng ph&#226;n bi&#7879;t HOA-th&#432;&#7901;ng, c&#243; th&#7875; nh&#7853;p nhi&#7873;u chu&#7895;i c&#225;ch nhau b&#7903;i d&#7845;u <b>;</b> ) <input type=text value="| 4123" name=bin size=40 align=center><br>
+			<i>V&#237; D&#7909;:<br>
+				-N&#7871;u b&#7841;n t&#236;m CC c&#243; bin 4121 v&#224; d&#7919; li&#7879;u c&#243; d&#7841;ng <b>4121340009981636|01|09|765|Mary L. Archambault|600 Fairview Terrace|Williamsport|PA|17701|US|5703237337|Mary Lou Archambault|600 Fairview Terrace|Williamsport|PA|17701|US|20061201080908-19633|72.70.200.240|1001165707||17.006</chargetota l><tax>0</tax><shipping>9.016</shipping><subtotal> 7.99|#122184|</b> (S&#7889; th&#7867; &#7903; m&#7895;i &#273;&#7847;u d&#242;ng) th&#236; b&#7841;n h&#227;y nh&#7853;p l&#224; <b>4123</b><br>
+				-N&#7871;u b&#7841;n t&#236;m email @gmail.com trong d&#7919; li&#7879;u c&#243; d&#7841;ng <b>angelarsmith01@gmail.com|Mary|</b> th&#236; b&#7841;n h&#227;y nh&#7853;p l&#224; <b>@gmail.com</b><br>
+				-N&#7871;u b&#7841;n t&#236;m Paypal Verified trong d&#7919; li&#7879;u c&#243; d&#7841;ng <b>angelo@jofbusiness.com|Archambault|Business|Verified|US|Good</b> th&#236; b&#7841;n h&#227;y nh&#7853;p l&#224; <b>|verified</b><br>
+			</i><br>
+			<input type=button onClick='DoSearchCC("div_Search_cc_result","div_Search_cc_left",getObj("frm_Search_cc").cc.innerHTML||getObj("frm_Search_cc").cc.value,getObj("frm_Search_cc").bin.value);return false;' value="B&#7855;t &#273;&#7847;u t&#236;m">
+		</form>
+		<div name=div_Search_cc_result id=div_Search_cc_result></div>
+		<div name=div_Search_cc_left id=div_Search_cc_left></div>
+
+<script type="text/javascript" src="http://widgets.amung.us/pro.js"></script>
+<script type="text/javascript" id="wau_scr_879b55e0"></script>

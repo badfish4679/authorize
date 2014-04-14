@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+	<TITLE>--[ SQL Injection ]--</TITLE>
+</HEAD>
+
+<pre>
+<h1>--[ SQL Injection - Tool Get CC-CVV (3 Tables) ]--</h1>
+	<link rel="stylesheet" type="text/css" href="../../../css/default1.css" />
+<table border="0">
+ <form target="_blank" action="get_tables.php" method="POST">
+	<tr>
+	<td width="150">Link</td>
+	<td><input type="text" name="link" size="100"></td>
+	<td><input type="submit" value="Get tables">
+	</td>
+	</tr>
+ </form>
+ 
+ <tr><td colspan="3"><hr border="1"></td></tr>
+ 
+ <form target="_blank" action="get_columns.php" method="POST">
+ 	<tr>
+	<td>Link</td>
+	<td><input type="text" name="link" size="100"></td>
+	</tr>
+	<td>Table</td>
+	<td><input type="text" name="table_value" size="50"><input type="submit" value="Get columns"></td>
+	</tr>
+  </form>
+ 
+ <tr><td colspan="3"><hr border="1"></td></tr>
+
+ <form target="_blank" action="get_latest_order.php" method="POST">
+	<tr>
+	<td>Link</td>
+	<td><input type="text" name="link" size="100"></td>
+	</tr>
+	</tr>
+	<td>Table</td>
+	<td><input type="text" name="table_value"></td>
+	</tr>
+	<tr>
+	<td>Fields</td>
+	<td><textarea type="text" name="field_values" cols="30" rows="5"></textarea></td>
+	</tr>
+	<tr><td></td>
+	<td><input type="submit" value="Get latest row"></td>
+	</tr>
+ </form>
+  
+ <tr><td colspan="3"><hr border="1"></td></tr>
+
+ <form target="_blank" action="get_orders.php" method="POST">
+	<tr>
+	<td>Link</td>
+	<td><input type="text" name="link" size="100"></td>
+	</tr>
+	</tr>
+	<td>Table</td>
+	<td><input type="text" name="table_value"></td></tr>
+   
+        <tr>
+	<td>List of fields</td>
+	<td><textarea type="text" name="field_values" cols="30" rows="5"></textarea></td>
+	</tr>
+
+	<tr><td>
+	Filter by field</td>
+	<td><input type="text" name="column_value"> Last id <input type="text" name="last_id"> Quatity <input type="text" name="quantity"></td>
+	</tr>
+
+	<tr><td></td>
+	<td><input type="submit" value="Get now"></td>
+	</tr>
+ </form>
+ <tr><td colspan="3"><hr border="1"></td></tr>
+ 
+ <form target="_blank" action="get_orders1.php" method="POST">
+	<tr>
+	<td>Link</td>
+	<td><input type="text" name="link" size="100"></td>
+	</tr>
+	</tr>
+	<td>Table 1</td>
+	<td><input type="text" name="table_value1"></td>
+        
+        </tr>
+        <td >Column 1</td>
+	<td><input type="text" name="column_value1"></td>
+
+	
+	<tr>
+	<td>List of fields 1</td>
+	<td><textarea type="text" name="field_values1" cols="30" rows="5"></textarea></td>
+	</tr>
+
+
+        <td>Table 2</td>
+	<td><input type="text" name="table_value2"></td></tr>
+                <td >Column 2</td>
+	<td><input type="text" name="column_value2"></td>
+        <tr>
+        <td >Column 4</td>
+	<td><input type="text" name="column_value4"></td>
+        </tr>
+	<tr>
+	<td>List of fields 2</td>
+	<td><textarea type="text" name="field_values2" cols="30" rows="5"></textarea></td>
+	</tr>
+        
+        <td>Table 3</td>
+	<td><input type="text" name="table_value3"></td></tr>
+                <td >Column 3</td>
+	<td><input type="text" name="column_value3"></td>
+	<tr>
+	<td>List of fields 3</td>
+	<td><textarea type="text" name="field_values3" cols="30" rows="5"></textarea></td>
+	</tr>
+
+        <tr><td>
+	Filter by field</td>
+	<td><input type="text" name="column_values12"> Last id <input type="text" name="last_id12"> Quatity <input type="text" name="quantity12"></td>
+	</tr>
+	<tr><td></td>
+	<td><input type="submit" value="Get now"></td>
+	</tr>
+ </form>
+ </table>
+
+ </BODY>
+</HTML>

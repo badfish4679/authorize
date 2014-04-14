@@ -1,0 +1,88 @@
+body  {
+	font-size : 10px;
+	font-family : verdana;
+	background-image: url(0.4581263_1_1.gif);
+	background-color: #000000;
+	color: #008000;
+	text-align: center;
+}
+textarea,select,input {
+	border-top-width: 1px; 
+	font-weight: bold; 
+	border-left-width: 1px; 
+	font-size: 10px; 
+	border-left-color: #008000; 
+	background: #004000; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #008000; 
+	color: #00ff00; 
+	border-top-color: #008000; 
+	font-family: verdana; 
+	border-right-width: 1px; 
+	border-right-color: #008000;
+}
+div.c15 {margin:0 auto;}
+div.c14 {width: 666px;}
+div.c13 {width: 300px;float:right;}
+div.c12 {width: 250px;float: left;}
+div.c11 {height: 40px;}
+div.c10 {text-align: left;background-image: url(CS0.10688736_1_1.gif);background-position:center top;}
+div.c9 {height:140px;}
+span.c11 {FONT-SIZE: 10px; FONT-FAMILY: 'courier new'}
+p {
+	font-size: 10px; 
+	font-family: verdana;
+}
+.crackhash {width:666px;padding:0px 10px 0px 5px;height: 15px;}
+.result {
+	float:left;margin:0px 2px 0px 0px;height: 13px;
+	border-top-width: 1px; 
+	font-weight: bold; 
+	border-left-width: 1px; 
+	font-size: 10px; 
+	border-left-color: #008000; 
+	background: #004000; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #008000; 
+	color: #00ff00; 
+	border-top-color: #008000; 
+	font-family: verdana; 
+	border-right-width: 1px; 
+	border-right-color: #008000;
+}
+.checkbin {height: 26px;}
+a:link {	color: #00C000;	text-decoration: none;}
+a:visited {	color: #00C000;	text-decoration: none;}
+a:active {	color: #00FF00;	text-decoration: none;}
+a:hover {	color: #00ff00; 	text-decoration: none;}
+b.hl1 {	font-weight: bold;}
+b.hl2 {	font-weight: bold; 	font-style: italic;}
+.sr {	font-size: 10px; 	line-height: 14px;}
+.verify {    margin: 2px 2px 10px 10px;    vertical-align:middle;    border: 1px solid #008000;}
+.main {
+	background-color: #000000;
+	text-align: center;
+	border: thin solid #008000;
+	margin:0px 0px 16px 0px;
+}
+.page {
+	font-size: 9px; 
+	font-weight: bold; 
+}
+span.error{color: red;font-weight: bold; }
+.convert {width: 666px;	overflow: hidden;	padding: 0px 10px 5px 60px;	text-align: left;}
+.convert  label{	width: 250px;	float: left;	font-weight: bold; }
+.convert  div{	width: 333px;	float: left;}
+.spam {width: 666px;text-align: left;padding: 0px 10px 10px 20px;font-size:14px;}
+.spam .left {width: 333px;height:20px;float: left;padding: 0px 0px 10px 0px;}
+.spam .left label{width: 90px;float:left;}
+.spam .left div{width: 243px;float:right;}
+.spam .right {width: 333px;height:20px;float:right;padding: 0px 0px 10px 0px;}
+.spam .right label{width: 90px;float:left;}
+.spam .right div{width: 243px;float:right;}
+.spam .textleft{width: 100px;float:left;}
+.spam .textright{width: 566px;float:right;}
+.spam div{width: 576px;float:right;}
+.paypal {width: 666px;text-align: left;padding: 0px 10px 10px 20px;font-size:14px;height:200px;}
+.paypal .textleft{width: 400px;float:left;}
+.paypal .textright{width: 266px;float:right;}
