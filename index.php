@@ -10,12 +10,12 @@ require("config.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap -->
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap-responsive.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/bootstrap-theme.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>bootstrap/css/datepicker.css">
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>style.css">
-    <link media="all" type="text/css" rel="stylesheet" href="<?php echo $site_root;?>jquery-linedtextarea.css">
+    <link media="all" type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="bootstrap/css/datepicker.css">
+    <link media="all" type="text/css" rel="stylesheet" href="style.css">
+    <link media="all" type="text/css" rel="stylesheet" href="jquery-linedtextarea.css">
 </head>
 <body>
 <h1 class="text-center">CiCi Aut0b0t <label class=" label label-default">V1.0</label></h1>
@@ -97,10 +97,10 @@ require("config.php");
 </div>
 </body>
 </html>
-<script src="<?php echo $site_root;?>jquery.js"></script>
-<script src="<?php echo $site_root;?>bootstrap/js/bootstrap.min.js"></script>
-<script src="<?php echo $site_root;?>bootstrap/js/bootstrap-datepicker.js"></script>
-<script src="<?php echo $site_root;?>jquery-linedtextarea.js"></script>
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap-datepicker.js"></script>
+<script src="jquery-linedtextarea.js"></script>
 <script>
     $(function() {
         // Target all classed with ".lined"
@@ -126,7 +126,7 @@ require("config.php");
         var row = $("#currentrow").val();
         if(parseInt(row)>0){
             $.ajax({
-                url:"<?php echo $site_root;?>Process.php",
+                url:"Process.php",
                 data:"card_num="+$("#waitnumber"+row).val().trim()+
                     "&exp_date="+$("#waitdate"+row).val().trim() +
                     "&first_name="+$("#waitfname"+row).val().trim() +
