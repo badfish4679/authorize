@@ -1,0 +1,668 @@
+#request
+Remote Address:62.146.79.14:443
+Request URL:https://www.bergzeit.co.uk/checkout-payment-en/
+Request Method:GET
+Status Code:200 OK
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Cookie:sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http%3A%2F%2Fwww.bergzeit.de%2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; refKey=pGdAoSKZr; isMobileCheckout=0; __atuvc=4%7C15%2C1%7C16; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=36; _uslk_name=Rookie%20vn; _uslk_email=rookievn102%40gmail.com; _uslk_app_state=Idle%3B0; language=1; sid=gq5pg59i951nsodo2d97cpfd21
+Host:www.bergzeit.co.uk
+Referer:https://www.bergzeit.co.uk/checkout-user-en/
+User-Agent:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+
+
+#header
+
+<!DOCTYPE html>
+
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>   <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="gtie9 modern"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<!-- META Ape -->
+		<meta name="ape:host" content="www.bergzeit.co.uk">
+		<meta name="ape:lang" content="1">
+		<meta name="ape:locale" content="en_UK">
+        <meta name="ape:path" content="">
+		<meta name="ape:channel" content="en">
+		<meta name="ape:env" content="production">
+		<meta name="ape:sub" content="0">
+        <meta name="ape:site" content="Bergzeit-EN">
+		<meta name="ape:version" content="5300">
+
+		<!-- META Content -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=9" >
+		<![endif]-->
+
+		<!-- META Mobile -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/out/bergzeit/img/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/out/bergzeit/img/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/out/bergzeit/img/apple-touch-icon-precomposed.png">
+
+		<!-- META Seo -->
+        <title>Your Payment Info</title><meta name="og:title" content="Your Payment Info">
+
+                                                                    <meta name="robots" content="index, follow">
+                                    
+                                        
+                
+                    <link rel="canonical" href="http://www.bergzeit.co.uk/checkout-payment-en/">
+        
+		<!-- Prefetching -->
+		<link rel="dns-prefetch" href="//google-analytics.com">
+		<link rel="dns-prefetch" href="//s3-eu-west-1.amazonaws.com">
+		<link rel="dns-prefetch" href="//googletagmanager.com">
+		<link rel="dns-prefetch" href="//googleadservices.com">
+		<link rel="dns-prefetch" href="//henkatenk.com">
+		
+		<!-- META Facebook -->
+		<meta property="og:site_name" content="https://www.bergzeit.co.uk/">
+
+                                                            
+            <meta property="og:type" content="website">
+            <meta property="og:image" content="//www.bergzeit.co.uk/out/bergzeit/img/bergzeit_co_uk.png">
+            <meta property="og:url" content="www.bergzeit.co.uk/checkout-payment-en/">
+        
+		<!-- RSS Feeds -->
+				
+		<!-- LINK Sources -->
+                    <link rel="shortcut icon" href="//static.bergzeit.de/out/bergzeit/img/favicon.ico?v=5300">
+        
+        
+                
+                                                                    
+                
+                <link rel="alternate" hreflang="en_SE" href="http://www.bergzeit.se/checkout-payment-en/" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_NO" href="http://www.bergzeit.no/checkout-payment-en/" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_DK" href="http://www.bergzeit.dk/checkout-payment-en/" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_FI" href="http://www.bergzeit.fi/checkout-payment-en/" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_IT" href="http://www.bergzeit.it/checkout-payment-en/" />
+                    
+		<base href="https://www.bergzeit.co.uk">
+
+                
+		<!--[if lte IE 8]>
+		<script type="text/javascript">
+				document.createElement('figure');
+				document.createElement('nav');
+				document.createElement('header');
+				document.createElement('figcaption');
+			</script>
+		<![endif]-->
+
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/lang/en_UK.js"></script>
+
+									<link rel="stylesheet" type="text/css" href="//static.bergzeit.de/out/bergzeit/css/styles.css?v=5300" media="all" />
+						<script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/jQuery.all.min.js?v=5300"></script>
+		
+		<!-- 
+			<link rel="stylesheet" type="text/css" href="//static.bergzeit.de/css/jquery.jqzoom.css?v=5300" media="screen" />
+		-->
+		
+		<!-- Google Analytics Start -->
+        
+
+
+    
+    <!-- GA Analytics Start -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46020198-1', 'bergzeit.co.uk', {'name': 'TrackerCOUK'});
+        ga('TrackerCOUK.set', 'anonymizeIp', true);
+        ga('TrackerCOUK.send', 'pageview');
+
+        
+        ga('create', 'UA-46018896-1', { 'name': 'TrackerOverall'});
+        ga('TrackerOverall.set', 'anonymizeIp', true);
+        ga('TrackerOverall.send', 'pageview');
+
+        
+        ga('create', 'UA-156540-15', 'bergzeit.co.uk', { 'name': 'TrackerOld'});
+        ga('TrackerOld.set', 'anonymizeIp', true);
+        ga('TrackerOld.send', 'pageview');
+
+            </script>
+
+        <!-- Google Analytics End -->
+
+        	</head>
+  <!-- OXID eShop Enterprise Edition, Version 5, Shopping Cart System (c) OXID eSales AG 2003 - 2014 - http://www.oxid-esales.com -->
+
+	<body>
+		<!-- Facebook Root -->
+		<div id="fb-root"></div>
+
+        <!-- APE Placeholders -->
+        <div class="is_notice_modal" style="display:none;" title=""></div>
+        <div class="overlay is_overlay hide"></div>
+        
+        <!-- APE NEW-ITEM-MESSAGE -->
+        
+
+        <!-- APE COUNTRY SELECT -->
+                			
+                
+        <!-- CONTENT START -->
+		<div id="main">
+
+			<a href="#" class="btn_scrollup hide fadeout is_site_scroll"></a>
+
+                            <header class="header header_reduced">
+	
+  	<!-- User Flyout -->
+  	<nav class="nav_user">
+	<ul>
+					<li class="icon_login">
+				<a class="is_user_flyout_open konto" href="https://www.bergzeit.co.uk/my-account/" >My Account</a>
+				<div class="is_user_flyout my_account_flyout">
+			        <a href="https://www.bergzeit.co.uk/my-account/">My Account</a>
+			        <a href="https://www.bergzeit.co.uk/my-wish-list/">My wishlist</a>
+                    <a href="https://www.bergzeit.co.uk/index.php?cl=apeViewAccountVouchers">My Vouchers</a>
+			        <a href="https://www.bergzeit.co.uk/my-address/">My Settings</a>
+			        <a href="https://www.bergzeit.co.uk/order-history/">My Order History</a>
+                    <a href="https://www.bergzeit.co.uk/index.php?cl=account_newsletter">Newsletter</a>
+			        <a href="https://www.bergzeit.co.uk/index.php?cl=&amp;fnc=logout&amp;redirect=1" title="Logout">Logout</a>
+			    </div>
+			</li>
+			<li>
+				<a href="https://www.bergzeit.co.uk/index.php?cl=&amp;fnc=logout&amp;redirect=1" title="Logout">Logout</a>
+			</li>
+			</ul>
+</nav>
+	
+	<!-- Informations -->
+	<!-- TOP Navigation LEFT -->
+ 
+<!-- LOGO -->
+<div class="bz_logo">
+	<a href="http://www.bergzeit.co.uk" title="Bergzeit, the outdoor shop for climbing, mountain sports and camping">
+				<img title="Bergzeit, the outdoor shop for climbing, mountain sports and camping" alt="Bergzeit, the Outdoorshop for climbing, mountain sports and camping" src="//www.bergzeit.co.uk/out/bergzeit/img/bergzeit_co_uk.png">
+	</a>
+</div>
+
+<!-- Hints -->
+<div class="usp_wrapper">
+    <span class="icon_money">100 Day <small>money back</small></span><span class="icon_hint">Only 9,95€ shipping <small>throughout Europe</small></span><span class="icon_chat is_userchat_open"><strong>Live Chat</strong></span>
+</div>
+	
+	<!-- Navigation -->
+	
+  	<!-- Basket Flyout -->
+				
+	<div class="header_basket is_mobile_hoverable">
+		<span class="item_count">1</span>
+		<a class="basket_link" href="http://www.bergzeit.co.uk/checkout-cart-en/">
+			<span class="headline">Shopping Cart</span>
+			<span class="price">18,22 €</span>
+			<span class="link_text">show</span>
+		</a>
+		<ul>
+																													<li>
+						<a href="http://www.bergzeit.co.uk/freeride-map-montafon-ski/">
+							<img height="40px" src="https://static.bergzeit.de/out/pictures/generated/product/1/54_54_75/sol_m001614_pic1_1.jpg" alt="Montafon - Ski" />
+							<span class="brand">
+								<span>1x</span> Freeride Map							</span>
+							<span class="product_name">Montafon - Ski</span>
+							<span class="price">18,22 €</span>
+						</a>
+					</li>
+													<li class="basket_summary">
+				<span>18,22 € </span>
+            				    	<a class="button_yellow button_action" href="http://www.bergzeit.co.uk/checkout-user-en/">Go to Checkout</a>
+            				</li>
+		</ul>
+	</div>
+
+	
+</header>
+            
+			<div class="content">
+													
+    <div class="wide_col is_basket is_basket_auto">
+        <div class="basket_overview">
+            
+            
+            
+                
+<ul class="basket_steps clearfix">
+    <li class="done">
+        <a href="http://www.bergzeit.co.uk/checkout-cart-en/">
+            <span class="headline">Step 1</span>
+            <span>Shopping Cart Overview</span>
+        </a>
+    </li>
+    <li class="done">
+        <a href="https://www.bergzeit.co.uk/checkout-user-en/">
+            <span class="headline">Step 2</span>
+            <span>Address Selection</span>
+        </a>
+    </li>
+    <li class="active">
+        <a href="https://www.bergzeit.co.uk/checkout-payment-en/" >
+        <span class="headline">Step 3</span>
+        <span>Shipping and Payment Method</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="https://www.bergzeit.co.uk/checkout-order-en/" >
+        <span class="headline">Step 4</span>
+        <span>Order Review</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="https://www.bergzeit.co.uk/checkout-order-en/" >
+        <span class="headline">Step 5</span>
+        <span>Done!</span>
+        </a>
+    </li>
+</ul>
+
+                                        <input type="hidden" class="is_heidelpay_action" value="https://heidelpay.hpcgw.net/sgw/gtw" />
+            
+            <input type="hidden" class="is_tro_action" value="https://www.sofort.com/payment/start" />
+
+            <form action="https://www.bergzeit.co.uk/index.php?cl=payment" name="payment" id="payment" method="post" class="is_form js-oxValidate">
+                <input type="submit" name="" value="" style="visibility: hidden;" />
+                <input type="hidden" name="stoken" value="D2AD9B3C" />
+<input type="hidden" name="lang" value="1" />
+                <input type="hidden" name="actcontrol" value="payment" />
+
+                <input type="hidden" name="cl" value="payment" />
+                <input type="hidden" name="userform" />
+                <input type="hidden" name="fnc" value="validatepayment" />
+                <input type="hidden" name="bltsprotection" value="0" />
+                <input type="hidden" name="stsprotection" value="" />
+                <div class="basket_submit clearfix">
+    <h3 class="headline">Your Payment Method</h3>
+    <div class="basket_submit_button">
+        <a href="javascript:void(0)" class="button_yellow button_action is_form_submit">Next</a>
+    </div>
+</div>
+
+<div class="content_left">
+    <div class="box_gradient basket_box basket_payment_box">
+        <div class="box_gradient_content">
+                        
+                            <div class="form_row form_row_radio is_basket_billing">
+                                                                
+                                                                        <input id="payment_oxidpayadvance" type="radio" value="oxidpayadvance" name="paymentid" >
+                        
+                        <label for="payment_oxidpayadvance">Cash in advance</label>
+                    
+                                    </div>
+                            <div class="form_row form_row_radio is_basket_billing">
+                                                                
+                                                                        <input id="payment_oxidpaypal" type="radio" value="oxidpaypal" name="paymentid" checked>
+                        
+                        <label for="payment_oxidpaypal">PayPal</label>
+                    
+                                    </div>
+                            <div class="form_row form_row_radio is_basket_billing">
+                                                                
+                                                                        <input id="payment_0a2f3a9929234061b75f92a0af9537e0" type="radio" value="0a2f3a9929234061b75f92a0af9537e0" name="paymentid" >
+                        
+                        <label for="payment_0a2f3a9929234061b75f92a0af9537e0">Credit Card with 3D Secure/Verified by VISA</label>
+                    
+                                    </div>
+                    </div>
+    </div>
+</div>
+
+
+<div class="content_right">
+    <div class="box_gradient basket_box is_basket_billing_info hide">
+        <strong class="headline"></strong>
+        <div class="box_gradient_content">
+            <p>Please select the preferred payment method to continue your purchase</p>
+        </div>
+    </div>
+
+    
+                            
+        <div id="payment_oxidpayadvance_form" class="box_gradient basket_box is_basket_billing_form hide">
+            <strong class="headline">Cash in advance</strong>
+            <div class="box_gradient_content">
+                                After completing your order you will receive a confirmation email with our banking details and all important payment information. Please note that choosing to pay in advance means your goods will only be sent once payment is registered in our bank account. Always submit your order no. as purpose please, e.g.  <br/>BIC:PBNKDEFF<br/>IBAN: DE95700100800008546801<br/>Purpose: 123456. <br/><br />Any transaction costs thereby incurred are borne by the customer.
+            </div>
+        </div>
+    
+                            
+        <div id="payment_oxidpaypal_form" class="box_gradient basket_box is_basket_billing_form">
+            <strong class="headline">PayPal</strong>
+            <div class="box_gradient_content">
+                                In the next step you will be redirected to PayPal. You can then log in to your PayPal account and authorize the payment. As soon as you have confirmed your data you will be transferred back to the Bergzeit shopping cart to complete your order. Payment takes place at this time; shipping occurs immediatly upon successful completion of the order.
+            </div>
+        </div>
+    
+                            
+        <div id="payment_0a2f3a9929234061b75f92a0af9537e0_form" class="box_gradient basket_box is_basket_billing_form hide">
+            <strong class="headline">Credit Card with 3D Secure/Verified by VISA</strong>
+            <div class="box_gradient_content">
+                                <div class="form">
+    
+    <input type="hidden" name="FRONTEND.MODE" value="ASYNC">
+    <input type="hidden" name="FRONTEND.RESPONSE_URL" value="https://www.bergzeit.co.uk/modules/efiheidelpay/public/hp_response.php">
+    <input type="hidden" name="FRONTEND.SESSION_ID" value="gq5pg59i951nsodo2d97cpfd21__@@step3__@@1__@@b78af5c9__@@D2AD9B3C">
+    <input type="hidden" name="FRONTEND.RETURN_ACCOUNT" value="true">
+    <input type="hidden" name="REQUEST.VERSION" value="1.0">
+    <input type="hidden" name="SECURITY.SENDER" value="31HA07BC811C9B7C5F3B2B2F8743C909">
+    <input type="hidden" name="USER.LOGIN" value="31ha07bc811c9b7c5f3b5a78a9d5c099">
+    <input type="hidden" name="USER.PWD" value="60F74F0C">
+    <input type="hidden" name="TRANSACTION.MODE" value="LIVE">
+    <input type="hidden" name="TRANSACTION.RESPONSE" value="SYNC">
+    <input type="hidden" name="TRANSACTION.CHANNEL" value="31HA07BC8100EF4AC4E90F44E824C541">
+    <input type="hidden" name="IDENTIFICATION.TRANSACTIONID" value="0a2f3a9929234061b75f92a0af9537e0__@@20140414-172905">
+    <input type="hidden" name="PAYMENT.CODE" value="CC.RG">
+            <input type="hidden" name="NAME.GIVEN" value="Rookie">
+    
+            <input type="hidden" name="NAME.FAMILY" value="vn">
+        <input type="hidden" name="ADDRESS.STREET" value="street 123">
+    <input type="hidden" name="ADDRESS.ZIP" value="93442 ">
+    <input type="hidden" name="ADDRESS.CITY" value="Morro Bay">
+    <input type="hidden" name="ADDRESS.STATE" value="">
+    <input type="hidden" name="ADDRESS.COUNTRY" value="US">
+    <input type="hidden" name="CONTACT.EMAIL" value="rookievn102@gmail.com">
+    <input type="hidden" name="CONTACT.IP" value="58.186.53.232">
+    <input type="hidden" name="RISKMANAGEMENT.PROCESS" value="AUTO">
+
+    <p>Please select the preferred payment method to continue your purchase</p>
+
+    <div class="form_row form_row_radio">
+        <label>Credit Card:</label>
+
+        <select name="ACCOUNT.BRAND">
+                            
+                                                <option value="MASTER" selected>Mastercard</option>                <option value="VISA" >VISA</option>                                                                                    </select>
+
+        <img src="/out/bergzeit/img/ico_mastercard.gif" alt="Mastercard" title="Mastercard" />
+        <img src="/out/bergzeit/img/ico_visa.gif" alt="Visa" title="Visa" />
+    </div>
+
+    <div class="form_row">
+        <label>Number:</label>
+        <input type="text" class="js-oxValidate js-oxValidate_notEmpty payment_text" size="20" maxlength="64" name="ACCOUNT.NUMBER" value="">
+        <p class="oxValidateError">
+            <span class="js-oxError_notEmpty">Please enter your credit card number</span>
+        </p>
+    </div>
+
+    <div class="form_row">
+        <label>Account Holder:</label>
+        <input type="text" size="20" class="js-oxValidate js-oxValidate_notEmpty" maxlength="64" name="ACCOUNT.HOLDER" value="Rookie vn"><br>
+        <p class="oxValidateError">
+            <span class="js-oxError_notEmpty">Please enter the name of the account holder</span>
+        </p>
+    </div>
+
+    <div class="form_row form_row_radio">
+        <label>Valid until:</label>
+        <select name="ACCOUNT.MONTH">
+            <option >01</option>
+            <option >02</option>
+            <option >03</option>
+            <option >04</option>
+            <option >05</option>
+            <option >06</option>
+            <option >07</option>
+            <option >08</option>
+            <option >09</option>
+            <option >10</option>
+            <option >11</option>
+            <option >12</option>
+        </select>
+
+        &nbsp;/&nbsp;
+
+        <select name="ACCOUNT.YEAR">
+                            <option >2014</option>
+                            <option >2015</option>
+                            <option >2016</option>
+                            <option >2017</option>
+                            <option >2018</option>
+                            <option >2019</option>
+                            <option >2020</option>
+                            <option >2021</option>
+                            <option >2022</option>
+                            <option >2023</option>
+                            <option >2024</option>
+                    </select>
+    </div>
+
+    <div class="form_row form_row_securitycode">
+        <div>
+            <p class="oxValidateError">
+                <span class="js-oxError_notEmpty">Pr&uuml;fziffer falsch</span>
+            </p>
+            <label>CVV2 or CVC2 security code:</label>
+            <input type="text" class="payment_text js-oxValidate js-oxValidate_notEmpty" maxlength="3" name="ACCOUNT.VERIFICATION" value="">
+        </div>
+
+        <p class="security_code">
+            <small>The security code is located on the back of your credit card and consists of the last three digits in the signature panel.</small>
+        </p>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+            </form>
+
+            <form action="https://www.bergzeit.co.uk/index.php?cl=payment" name="shipping" id="shipping" method="post" class="is_form">
+                <input type="submit" name="" value="" style="visibility: hidden;" />
+                <input type="hidden" name="stoken" value="D2AD9B3C" />
+<input type="hidden" name="lang" value="1" />
+                <input type="hidden" name="actcontrol" value="payment" />
+
+                <input type="hidden" name="cl" value="payment" />
+                <input type="hidden" name="fnc" value="changeshipping" />
+                <input type="hidden" name="selectedpaymentid" value="" />
+                <input type="hidden" name="userform" />
+                <div class="basket_submit clearfix">
+    <h3 class="headline">Your Shipping Method</h3>
+</div>
+
+<div class="content_left">
+    <div class="box_gradient basket_box basket_delivery_box">
+        <div class="box_gradient_content">
+                                        <div class="form_row form_row_radio is_basket_delivery">
+                    <input id="oxidstandard" class="is_shipping_type" type="radio" value="oxidstandard" name="sShipSet" checked="checked" />
+                    <label for="oxidstandard">DHL Standard</label>
+                                    </div>
+
+                                                                        </div>
+    </div>
+</div>
+
+<div class="content_right">
+    <div class="box_gradient basket_box is_basket_delivery_info">
+        <strong class="headline">Expected Shipping Date</strong>
+        <div class="box_gradient_content is_basket_delivery_info_default hide">
+            <span class="delivery_time"></span>
+            <span class="delivery_service">Select a shipping method to see the expected shipping date</span>
+        </div>
+
+                    <div id="oxidstandard_delivery" class="box_gradient_content is_basket_delivery_info_form">
+                                <span class="delivery_time">Tuesday, 15. April 2014</span>
+                                <br />
+                Slight discrepancies are possible in cases of bulky freight
+            </div>
+                <div id="payadvance_delivery" class="box_gradient_content is_basket_delivery_info_form hide">
+            <span class="delivery_time"></span>
+            Shipping occurs immediately after payment is registered in our bank account
+        </div>
+    </div>
+</div>
+            </form>
+
+            <div class="basket_products basket_products_single">
+                <table>
+                    <tbody>
+                        <tr class="basket_amount">
+    <td colspan="7">
+        <p>
+                            For deliveries to non-EU countries, additional fees may be necessary due to country-specific sales tax, advance commission or customs fees. These fees must be paid by the customer.
+                    </p>
+        <dl>
+                        
+                        <dt>Net value of goods:</dt>
+            <dd>18,22 €</dd>
+
+                                        <dt>VAT 0%:</dt>
+                <dd>0,00 €</dd>
+            
+                                    <dt>Shipping costs:</dt>
+                            <dd>19,95 €</dd>
+            
+                        
+                        
+                        
+                        <dt class="total"><b>Amount due:</b></dt>
+            <dd class="total"><b>38,17 €</b></dd>
+        </dl>
+
+            </td>
+</tr>
+                    </tbody>
+                </table>
+                <div class="basket_submit clearfix">
+                    <div class="basket_submit_button">
+                        <a href="javascript:void(0)" class="button_yellow button_action is_to_checkout_button">Next</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+
+            <div class="basket_footer">
+    <span>Do you have questions regarding your order? The Bergzeit Team will be glad to help you out. Give us a call: +49 8024 - 902290</span>
+    <ul>
+        <li>
+            <a href="http://www.bergzeit.co.uk/AGBs/#Datenschutz" target="_blank">Data Security</a>
+        </li>
+        <li>
+            <a href="http://www.bergzeit.co.uk/AGBs/#Widerrufsbelehrung" target="_blank">Notice of Withdrawal</a>
+        </li>
+        <li>
+            <a href="http://www.bergzeit.co.uk/Impressum/" target="_blank">Imprint</a>
+        </li>
+    </ul>
+
+    <a href="http://www.bergzeit.co.uk">Back to the Shop</a>
+</div>
+        </div>
+    </div>
+    
+	
+											</div>
+
+                            <div class="footer"></div>
+            		</div>
+		<!-- CONTENT END -->
+
+		
+			<script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/Bergzeit.min.js?v=5300"></script>
+			
+			
+		
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/widgets/oxinputvalidator.js"></script>
+		<script type="text/javascript">
+			$('form.js-oxValidate').oxInputValidator();
+		</script>
+
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/widgets/oxcountrystateselect.js"></script>
+
+        <!-- Partner Bergzeit Start -->
+		        <script language="JavaScript" src="//static.bergzeit.de/out/bergzeit/js/Netslave.js?cpid=1"></script>
+        <script language="JavaScript">if (typeof pid!='undefined') document.write("<img src='//partner.bergzeit.de/go.cgi?cpid=1&pid="+pid+"&subid="+subid+"&wmid=bcc&target="+encodeURI(document.location.href)+"&ref="+encodeURI(document.referrer)+"' height='1' width='1' border='0'>");</script>
+		<!-- Partner Bergzeit End -->
+
+		<!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KMM4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KMM4');</script>
+        <!-- End Google Tag Manager -->
+
+		<!-- Userlike Start -->
+			<!-- <div id="replace_userlike"></div> -->
+    <a href="javascript:void(0);" id="userlikeCustomTab" class="userlike_chat_button" data-right="64" data-top="105" data-orientation="right" data-callback="userlikeButtonHandler"></a>
+    <script type="text/javascript">
+
+        var userlikeData = {};
+        userlikeData.custom = {};
+
+                    userlikeData.user = {
+                name: "Rookie vn",
+                email: "rookievn102@gmail.com"
+            }
+            userlikeData.custom = {
+                custnr: "2474673"
+            }
+        
+                    userlikeData.custom.basket = {"c6376ddd2c56abe68041e09e4323bcd3":{"productid":"c6376ddd2c56abe68041e09e4323bcd3","productname":"Montafon - Ski","productlink":"http:\/\/www.bergzeit.co.uk\/freeride-map-montafon-ski\/","productunitprice":"18,22"}};
+        
+        function userlikeButtonHandler(visible) {
+
+            userlikeCheckOperatorStatus(function(operators) {
+
+                var blOnline = false;
+                if(operators.length > 0) {
+                    jQuery.each(operators, function() {
+
+                        if(this.slots.online == 1) {
+                            blOnline = true;
+                            return false;
+                        }
+                    });
+                }
+
+                if(blOnline) {
+                    jQuery('#userlikeCustomTab').addClass('online');
+                }
+            });
+        }
+    </script>
+    <script rel="dns-prefetch" type="text/javascript" src="//s3-eu-west-1.amazonaws.com/userlike-cdn-widgets/c6bd329b1abcbbbb3870a68fb6eedae6e4585d2cee0e386dff9df3b38f6fa7fa.js"></script>
+
+
+        <!-- Userlike End -->
+
+                    <!-- Google Code for Smart Pixel -->
+                            <script type="text/javascript">
+	var google_tag_params = {
+									pagetype: 'cart',
+										prodid: 'M001614',
+				price: '18.22'
+						};
+</script>
+                    
+		<!-- APE Last-Check -->
+		<div class="selenium-last-check"></div>
+
+	</body>
+</html>
+
+
+curl "https://www.bergzeit.co.uk/index.php?force_sid=gq5pg59i951nsodo2d97cpfd21&payerror=-99&cl=payment&stoken=587CA349" -H "Accept-Encoding: gzip,deflate,sdch" -H "Accept-Language: en-US,en;q=0.8" -H "User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Referer: https://heidelpay.hpcgw.net/sgw/gtw" -H "Cookie: sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http"%"3A"%"2F"%"2Fwww.bergzeit.de"%"2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; refKey=pGdAoSKZr; __atuvc=4"%"7C15"%"2C1"%"7C16; _uslk_name=Rookie"%"20vn; _uslk_email=rookievn102"%"40gmail.com; sid=g3nfnnockaia90j0am4ak9mva3; language=1; isMobileCheckout=0; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=39; _uslk_app_state=Idle"%"3B0" -H "Connection: keep-alive" --compressed

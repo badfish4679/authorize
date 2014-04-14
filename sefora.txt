@@ -1,0 +1,25 @@
+httpwww.sephora.comlong-lasting-eye-liner-P279639skuId=1296276
+
+response
+{"earned_today_bipoints":5,"line_items":[{"commerce_id":"ci240703000562","quantity":1,"sku_id":"1296276","sku":{"is_show_add_to_basket":true,"swatch_image":"/images/default-hero.jpg","is_sephora_exclusive":true,"grid_images":"/productimages/sku/s1296276-main-grid.jpg","is_show_sign_in_and_sign_up":false,"variation_value":"11 Glitter Green","is_show_sign_up":false,"is_show_add_all_to_list":false,"inline_image":"/productimages/sku/s1296276-main-thumb.jpg","sku_size":"","large_images":"/productimages/sku/s1296276-main-Lhero.jpg","ingredients":"Aqua (Water), Alcohol Denat., CI 77499 (Iron Oxides), Mica, Glycerin, CI 77891 (Titanium Dioxide), CalCIum Sodium Borosilicate, CI 77288 (Chromium Oxide Green), Pullulan, Disodium Coco Glucoside Citrate, CI 77007 (Ultramarines), Sodium Dehydroacetate, Citric Acid, Hectorite, Xanthan Gum, Tin Oxide, Sodium Hydroxide. ","id":"1296276","list_price":12,"hero_images":"/productimages/sku/s1296276-main-hero.jpg","additional_sku_desc":"rich jade with green glitter","primary_product":{"id":"P279639","display_name":"Long-Lasting 12HR Wear Eye Liner","variation_type":"Color","swatch_type":"Image","product_type":"standard","product_url":"/long-lasting-eye-liner-P279639","brand_name":"SEPHORA COLLECTION"},"primary_product_id":"P279639","sale_price":5,"sku_type":"Standard","thumb_images":"/productimages/sku/s1296276-main-thumb.jpg","bi_type":"None","shipping_info":"","is_show_buy_collection":false,"bi_exclusivity_level":"none","is_show_find_in_store":true,"sku_number":"1296276"}}],"redeemed_bipoints":0,"subtotal":5,"item_count":1,"available_bipoints":5,"amount_to_free_shipping":45}
+
+request header
+http://www.sephora.com/rest/user/cart
+
+POST /rest/user/cart HTTP/1.1
+Host: www.sephora.com
+Connection: keep-alive
+Content-Length: 81
+Accept: */*
+Origin: http://www.sephora.com
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://www.sephora.com/long-lasting-eye-liner-P279639?skuId=1296276
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: JSESSIONID=24BDB076719D17CC85C199584994E35E.node5; site_locale=us; site_language=en; rvi_6125792313=1296276; akaau=1397309391~id=824642cb192fe97e1d92a12d31b929fe; mbox=check#true#1397308870|session#1397308809135-204025#1397310670|PC#1397308809135-204025.17_45#1398518423; AMCV_sephoramcspb=MCVID%7C56B1FA65C8716C94-3685CCCC7435A6E1%7CMCGDV-1397395223%7CN%7CMCGDC-1397395223%7CN; fsr.s={"v":1,"rid":"d445cf6-83824989-9dc6-e462-99f3d","to":3,"rc":true,"rcp":true,"c":"http://www.sephora.com/long-lasting-eye-liner-P279639","pv":1,"lc":{"d0":{"v":1,"s":false}},"cd":0}; wasHttps=false; pastSignInStatus=unrecognized; prevPageName=product%3Ap279639%3Asephora%20collection%20long-lasting%2012hr%20wear%20eye%20liner; __uvt=; _msuuid_use8n62ba0=5BE97054-13A0-4621-B248-946BA8205936; www.sephora.com=R3366046538
+
+form data
+%2Fatg%2Fcommerce%2Forder%2Fpurchase%2FCartModifierFormHandler.itemsMap.1296276=1
+

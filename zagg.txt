@@ -1,0 +1,31 @@
+http://www.zagg.com/ifrogz/headphones/caliber-stealth-headphones-gaming-on-over-ear-mic/7251
+
+request
+http://www.zagg.com/store/cart/action/minicart/add
+
+request header
+POST /store/cart/action/minicart/add HTTP/1.1
+Host: www.zagg.com
+Connection: keep-alive
+Content-Length: 66
+Accept: application/json, text/javascript, */*; q=0.01
+X-NewRelic-ID: UA4FU1FXGwAAUVFQAgA=
+Origin: http://www.zagg.com
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://www.zagg.com/ifrogz/headphones/caliber-stealth-headphones-gaming-on-over-ear-mic/7251
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: PHPSESSID=h9i6kjlusfrj4dc55s91l16r16; zagg_location=BG; bn_u=6925089227707724386; bnTrail=%5B%22http%3A%2F%2Fwww.zagg.com%2F%22%5D; com.silverpop.iMAWebCookie=2e1c104b-c2b1-3260-7479-9ae0ec41b550; com.silverpop.iMA.page_visit=47,; com.silverpop.iMA.session=0a538eb9-2b52-9155-1062-67a2601ad137; __ar_v4=; bn_ec=%7B%22a%22%3A%22c%22%2C%22c%22%3A%22d%26g%26s%22%2C%22d%22%3A%22http%3A%2F%2Fwww.zagg.com%2F%22%2C%22r%22%3A%22%22%2C%22t%22%3A1397307906250%2C%22u%22%3A%226925089227707724386%22%2C%22dd%22%3A%22http%3A%2F%2Fwww.zagg.com%2Fgaming%22%2C%22l%22%3A%22See%20All%20Gaming%20%C2%BB%22%2C%22de%22%3A%7B%22ti%22%3A%22ZAGG%20-%20Your%20Best%20Fit.%22%2C%22nw%22%3A181%2C%22nl%22%3A288%7D%7D; s_cpc=0; mbox=session#1397307775598-139532#1397309835|PC#1397307775598-139532.17_37#1398517575|check#true#1397308035; __utma=90719505.1085684305.1397307808.1397307808.1397307808.1; __utmb=90719505.3.10.1397307808; __utmc=90719505; __utmz=90719505.1397307808.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s_cc=true; s_ppvl=http%253A%2F%2Fwww.zagg.com%2Fgaming%2C57%2C51%2C706%2C1400%2C606%2C1400%2C1050%2C1%2CP; s_sq=%5B%5BB%5D%5D; needlepin=N190d139730782364133c500111276fdf9bc76fdf9bc76fdfa690000000000000000076fdf9bc00000000000000; s_ppv=iFrogz%253AHeadphones%253AAny%2520device%253AiFrogz%2520Caliber%2520Stealth%2520Headphones%2C37%2C37%2C606%2C1400%2C606%2C1400%2C1050%2C1%2CP; s_fid=55766B069853C1C9-01F67C33E9F1CBD4; gpv=iFrogz%3AHeadphones%3AAny%20device%3AiFrogz%20Caliber%20Stealth%20Headphones; s_vs=1; s_nr=1397308033762-New; gpv_p5=iFrogz%3AHeadphones%3AAny%20device%3AiFrogz%20Caliber%20Stealth%20Headphones
+
+form data
+action=add&qty=1&sku=CAL-STEALT&getCount=true&csrf_token=undefined
+action:add
+qty:1
+sku:CAL-STEALT
+getCount:true
+csrf_token:undefined
+
+response
+{"count":1,"cart":[{"id":100,"cart_sku":"CAL-STEALT","cart_desc":"iFrogz Caliber Stealth Mobile Gaming Headphones with Mic","cart_qty":1,"cart_subtotal":"39.99"}],"subtotal":"39.99","shipTime":"Apr 14th - Apr 15th","CAL-STEALT":{"imgFull":"http:\/\/cfprod.zagg.com\/product-images\/I47CAL-STEALT.png","imgSmall":"http:\/\/cfprod.zagg.com\/product-images\/I47CAL-STEALT-sm.png","imgThumb":"http:\/\/cfprod.zagg.com\/product-images\/I47CAL-STEALT-thumb.png","price":"39.99","desc":"iFrogz Caliber Stealth by iFrogz Mobile Gaming Headphones with Mic"}}

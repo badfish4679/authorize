@@ -1,0 +1,795 @@
+#add cart
+
+Remote Address:62.146.79.14:80
+Request URL:http://www.bergzeit.co.uk/freeride-map-montafon-ski/
+Request Method:POST
+Status Code:302 Found
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:223
+Content-Type:application/x-www-form-urlencoded
+Cookie:sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http%3A%2F%2Fwww.bergzeit.de%2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; _uslk_name=Robert%20%20Ortega%20; _uslk_email=rookievn102%40gmail.com; __atuvc=4%7C15; refKey=pGdAoSKZr; sid=gq5pg59i951nsodo2d97cpfd21; language=1; isMobileCheckout=0; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=27; _uslk_app_state=Idle%3B0
+Host:www.bergzeit.co.uk
+Origin:http://www.bergzeit.co.uk
+Referer:http://www.bergzeit.co.uk/freeride-map-montafon-ski/
+User-Agent:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Form Dataview sourceview URL encoded
+cnid:a37af6ab49dd0bbaf206c0706bc8fa85
+listtype:list
+actcontrol:details
+cl:details
+aid:c6376ddd2c56abe68041e09e4323bcd3
+anid:c6376ddd2c56abe68041e09e4323bcd3
+parentid:c6376ddd2c56abe68041e09e4323bcd3
+panid:
+fnc:tobasket
+am:1
+
+cnid=a37af6ab49dd0bbaf206c0706bc8fa85&listtype=list&actcontrol=details&cl=details&aid=c6376ddd2c56abe68041e09e4323bcd3&anid=c6376ddd2c56abe68041e09e4323bcd3&parentid=c6376ddd2c56abe68041e09e4323bcd3&panid=&fnc=tobasket&am=1
+
+#redirect to new page
+<span class="item_count">1</span>
+
+#payment page
+
+stoken=D2AD9B3C&lang=1&actcontrol=user&cl=user&option=&fnc=changeuser&lgn_cook=0&blshowshipaddress=0&invadr%5Boxuser__oxsal%5D=MR&invadr%5Boxuser__oxfname%5D=Rookie&invadr%5Boxuser__oxlname%5D=vn&invadr%5Boxuser__oxcompany%5D=&invadr%5Boxuser__oxstreet%5D=street&invadr%5Boxuser__oxstreetnr%5D=123&invadr%5Boxuser__oxzip%5D=93442+&invadr%5Boxuser__oxcity%5D=Morro+Bay&invadr%5Boxuser__oxcountryid%5D=8f241f11096877ac0.98748826&invadr%5Boxuser__oxstateid%5D=CA&invadr%5Boxuser__oxfon%5D=8059344212+&invadr%5Boxuser__oxbirthdate%5D%5Bday%5D=01&invadr%5Boxuser__oxbirthdate%5D%5Bmonth%5D=01&invadr%5Boxuser__oxbirthdate%5D%5Byear%5D=1980&changeShipping=0&changeClass=user&oxaddressid=-1&delpack=0&deladr%5Boxaddress__oxsal%5D=MR&deladr%5Boxaddress__oxfname%5D=&deladr%5Boxaddress__oxlname%5D=&deladr%5Boxaddress__oxcompany%5D=&deladr%5Boxaddress__oxstreet%5D=&deladr%5Boxaddress__oxstreetnr%5D=&deladr%5Boxaddress__oxzip%5D=&deladr%5Boxaddress__oxcity%5D=&deladr%5Boxaddress__oxcountryid%5D=4d46de5e2da6685dddc888923fa7dfc0&deladr%5Boxaddress__oxstateid%5D=&deladr%5Boxaddress__oxfon%5D=&userform=
+
+
+Remote Address:62.146.79.14:443
+Request URL:https://www.bergzeit.co.uk/index.php?
+Request Method:POST
+Status Code:302 Found
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:1094
+Content-Type:application/x-www-form-urlencoded
+Cookie:sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http%3A%2F%2Fwww.bergzeit.de%2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; refKey=pGdAoSKZr; isMobileCheckout=0; __atuvc=4%7C15%2C1%7C16; sid=gq5pg59i951nsodo2d97cpfd21; language=1; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=36; _uslk_name=Rookie%20vn; _uslk_email=rookievn102%40gmail.com; _uslk_app_state=Idle%3B0
+Host:www.bergzeit.co.uk
+Origin:https://www.bergzeit.co.uk
+Referer:https://www.bergzeit.co.uk/checkout-user-en/
+User-Agent:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Form Dataview sourceview URL encoded
+stoken:D2AD9B3C
+lang:1
+actcontrol:user
+cl:user
+option:
+fnc:changeuser
+lgn_cook:0
+blshowshipaddress:0
+invadr[oxuser__oxsal]:MR
+invadr[oxuser__oxfname]:Rookie
+invadr[oxuser__oxlname]:vn
+invadr[oxuser__oxcompany]:
+invadr[oxuser__oxstreet]:street
+invadr[oxuser__oxstreetnr]:123
+invadr[oxuser__oxzip]:93442 
+invadr[oxuser__oxcity]:Morro Bay
+invadr[oxuser__oxcountryid]:8f241f11096877ac0.98748826
+invadr[oxuser__oxstateid]:CA
+invadr[oxuser__oxfon]:8059344212 
+invadr[oxuser__oxbirthdate][day]:01
+invadr[oxuser__oxbirthdate][month]:01
+invadr[oxuser__oxbirthdate][year]:1980
+changeShipping:0
+changeClass:user
+oxaddressid:-1
+delpack:0
+deladr[oxaddress__oxsal]:MR
+deladr[oxaddress__oxfname]:
+deladr[oxaddress__oxlname]:
+deladr[oxaddress__oxcompany]:
+deladr[oxaddress__oxstreet]:
+deladr[oxaddress__oxstreetnr]:
+deladr[oxaddress__oxzip]:
+deladr[oxaddress__oxcity]:
+deladr[oxaddress__oxcountryid]:4d46de5e2da6685dddc888923fa7dfc0
+deladr[oxaddress__oxstateid]:
+deladr[oxaddress__oxfon]:
+userform:
+
+D3HEIDELPAY_ORDER_3DS_SECCODE
+
+#check visa return https://www.bergzeit.co.uk/index.php?force_sid=gq5pg59i951nsodo2d97cpfd21&payerror=-99&cl=payment&stoken=D2AD9B3C
+
+Remote Address:217.68.2.220:443
+Request URL:https://heidelpay.hpcgw.net/sgw/gtw
+Request Method:POST
+Status Code:200 OK
+Request Headersview source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:1114
+Content-Type:application/x-www-form-urlencoded
+Host:heidelpay.hpcgw.net
+Origin:https://www.bergzeit.co.uk
+Referer:https://www.bergzeit.co.uk/checkout-payment-en/
+User-Agent:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Form Dataview parsed
+stoken=D2AD9B3C&lang=1&actcontrol=payment&cl=payment&userform=&fnc=validatepayment&bltsprotection=0&stsprotection=&paymentid=0a2f3a9929234061b75f92a0af9537e0&FRONTEND.MODE=ASYNC&FRONTEND.RESPONSE_URL=https%3A%2F%2Fwww.bergzeit.co.uk%2Fmodules%2Fefiheidelpay%2Fpublic%2Fhp_response.php&FRONTEND.SESSION_ID=gq5pg59i951nsodo2d97cpfd21__%40%40step3__%40%401__%40%40b78af5c9__%40%40D2AD9B3C&FRONTEND.RETURN_ACCOUNT=true&REQUEST.VERSION=1.0&SECURITY.SENDER=31HA07BC811C9B7C5F3B2B2F8743C909&USER.LOGIN=31ha07bc811c9b7c5f3b5a78a9d5c099&USER.PWD=60F74F0C&TRANSACTION.MODE=LIVE&TRANSACTION.RESPONSE=SYNC&TRANSACTION.CHANNEL=31HA07BC8100EF4AC4E90F44E824C541&IDENTIFICATION.TRANSACTIONID=0a2f3a9929234061b75f92a0af9537e0__%40%4020140414-172905&PAYMENT.CODE=CC.RG&NAME.GIVEN=Rookie&NAME.FAMILY=vn&ADDRESS.STREET=street+123&ADDRESS.ZIP=93442+&ADDRESS.CITY=Morro+Bay&ADDRESS.STATE=&ADDRESS.COUNTRY=US&CONTACT.EMAIL=rookievn102%40gmail.com&CONTACT.IP=58.186.53.232&RISKMANAGEMENT.PROCESS=AUTO&ACCOUNT.BRAND=MASTER&ACCOUNT.NUMBER=1234567890123456&ACCOUNT.HOLDER=Rookie+vn&ACCOUNT.MONTH=01&ACCOUNT.YEAR=2014&ACCOUNT.VERIFICATION=111
+
+
+https://heidelpay.hpcgw.net/sgw/gtw
+
+POST /sgw/gtw HTTP/1.1
+Host: heidelpay.hpcgw.net
+Connection: keep-alive
+Content-Length: 1132
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: https://www.bergzeit.co.uk
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: https://www.bergzeit.co.uk/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&payerror=-99&cl=payment&stoken=515D13B
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+
+HTTP/1.1 200 OK
+Date: Sat, 12 Apr 2014 14:26:25 GMT
+Server: Apache
+Content-Length: 866
+Connection: close
+Content-Type: text/html;charset=ISO-8859-15
+
+
+stoken=D2AD9B3C&lang=1&actcontrol=payment&cl=payment&userform=&fnc=validatepayment&bltsprotection=0&stsprotection=&paymentid=0a2f3a9929234061b75f92a0af9537e0&FRONTEND.MODE=ASYNC&FRONTEND.RESPONSE_URL=https%3A%2F%2Fwww.bergzeit.co.uk%2Fmodules%2Fefiheidelpay%2Fpublic%2Fhp_response.php&FRONTEND.SESSION_ID=gq5pg59i951nsodo2d97cpfd21__%40%40step3__%40%401__%40%40b78af5c9__%40%40D2AD9B3C&FRONTEND.RETURN_ACCOUNT=true&REQUEST.VERSION=1.0&SECURITY.SENDER=31HA07BC811C9B7C5F3B2B2F8743C909&USER.LOGIN=31ha07bc811c9b7c5f3b5a78a9d5c099&USER.PWD=60F74F0C&TRANSACTION.MODE=LIVE&TRANSACTION.RESPONSE=SYNC&TRANSACTION.CHANNEL=31HA07BC8100EF4AC4E90F44E824C541&IDENTIFICATION.TRANSACTIONID=0a2f3a9929234061b75f92a0af9537e0__%40%4020140414-171107&PAYMENT.CODE=CC.RG&NAME.GIVEN=Rookie&NAME.FAMILY=vn&ADDRESS.STREET=street+123&ADDRESS.ZIP=93442+&ADDRESS.CITY=Morro+Bay&ADDRESS.STATE=&ADDRESS.COUNTRY=US&CONTACT.EMAIL=rookievn102%40gmail.com&CONTACT.IP=58.186.53.232&RISKMANAGEMENT.PROCESS=AUTO&ACCOUNT.BRAND=VISA&ACCOUNT.NUMBER=1234567890123456&ACCOUNT.HOLDER=Rookie+vn&ACCOUNT.MONTH=01&ACCOUNT.YEAR=2014&ACCOUNT.VERIFICATION=111
+
+stoken:D2AD9B3C
+lang:1
+actcontrol:payment
+cl:payment
+userform:
+fnc:validatepayment
+bltsprotection:0
+stsprotection:
+paymentid:0a2f3a9929234061b75f92a0af9537e0
+FRONTEND.MODE:ASYNC
+FRONTEND.RESPONSE_URL:https://www.bergzeit.co.uk/modules/efiheidelpay/public/hp_response.php
+FRONTEND.SESSION_ID:gq5pg59i951nsodo2d97cpfd21__@@step3__@@1__@@b78af5c9__@@D2AD9B3C
+FRONTEND.RETURN_ACCOUNT:true
+REQUEST.VERSION:1.0
+SECURITY.SENDER:31HA07BC811C9B7C5F3B2B2F8743C909
+USER.LOGIN:31ha07bc811c9b7c5f3b5a78a9d5c099
+USER.PWD:60F74F0C
+TRANSACTION.MODE:LIVE
+TRANSACTION.RESPONSE:SYNC
+TRANSACTION.CHANNEL:31HA07BC8100EF4AC4E90F44E824C541
+IDENTIFICATION.TRANSACTIONID:0a2f3a9929234061b75f92a0af9537e0__@@20140414-171107
+PAYMENT.CODE:CC.RG
+NAME.GIVEN:Rookie
+NAME.FAMILY:vn
+ADDRESS.STREET:street 123
+ADDRESS.ZIP:93442 
+ADDRESS.CITY:Morro Bay
+ADDRESS.STATE:
+ADDRESS.COUNTRY:US
+CONTACT.EMAIL:rookievn102@gmail.com
+CONTACT.IP:58.186.53.232
+RISKMANAGEMENT.PROCESS:AUTO
+ACCOUNT.BRAND:VISA
+ACCOUNT.NUMBER:1234567890123456
+ACCOUNT.HOLDER:Rookie vn
+ACCOUNT.MONTH:01
+ACCOUNT.YEAR:2014
+ACCOUNT.VERIFICATION:111
+
+
+redirect
+https://www.bergzeit.co.uk/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B
+
+Cookie:sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http%3A%2F%2Fwww.bergzeit.de%2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; refKey=pGdAoSKZr; isMobileCheckout=0; __atuvc=4%7C15%2C1%7C16; sid=gq5pg59i951nsodo2d97cpfd21; language=1; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=37; _uslk_name=Rookie%20vn; _uslk_email=rookievn102%40gmail.com; _uslk_app_state=Idle%3B0
+
+GET /index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B HTTP/1.1
+Host: www.bergzeit.co.uk
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+Referer: https://heidelpay.hpcgw.net/sgw/gtw
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: sid_key=oxid; blNotInitial=1; subid=ref; _uslk_visits=1; _uslk_referrer=http%3A%2F%2Fwww.bergzeit.de%2F; _uslk_bootstrapped=1; _uslk_ct=0; _uslk_co=0; _uslk_active=0; refKey=9rExJWUwD; isMobileCheckout=0; __atuvc=2%7C15; language=1; sid=ums20425t7ji4ai7iqrechkd15; _ga=GA1.3.2094539646.1397311965; _uslk_page_impressions=8; _uslk_name=Robert%20%20Ortega%20; _uslk_email=rookievn102%40gmail.com; _uslk_app_state=Idle%3B0
+
+force_sid:ums20425t7ji4ai7iqrechkd15
+cl:order
+stoken:515D13B
+
+response
+<!DOCTYPE html>
+
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>   <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="gtie9 modern"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<!-- META Ape -->
+		<meta name="ape:host" content="www.bergzeit.co.uk">
+		<meta name="ape:lang" content="1">
+		<meta name="ape:locale" content="en_UK">
+        <meta name="ape:path" content="">
+		<meta name="ape:channel" content="en">
+		<meta name="ape:env" content="production">
+		<meta name="ape:sub" content="0">
+        <meta name="ape:site" content="Bergzeit-EN">
+		<meta name="ape:version" content="5300">
+
+		<!-- META Content -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if IE]>
+			<meta http-equiv="X-UA-Compatible" content="IE=9" >
+		<![endif]-->
+
+		<!-- META Mobile -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/out/bergzeit/img/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/out/bergzeit/img/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/out/bergzeit/img/apple-touch-icon-precomposed.png">
+
+		<!-- META Seo -->
+        <title>Review and Confirm Order</title><meta name="og:title" content="Review and Confirm Order">
+
+                                                                    <meta name="robots" content="noindex, follow">
+                                    
+                                        
+                
+                    <link rel="canonical" href="http://www.bergzeit.co.uk/index.php">
+        
+		<!-- Prefetching -->
+		<link rel="dns-prefetch" href="//google-analytics.com">
+		<link rel="dns-prefetch" href="//s3-eu-west-1.amazonaws.com">
+		<link rel="dns-prefetch" href="//googletagmanager.com">
+		<link rel="dns-prefetch" href="//googleadservices.com">
+		<link rel="dns-prefetch" href="//henkatenk.com">
+		
+		<!-- META Facebook -->
+		<meta property="og:site_name" content="https://www.bergzeit.co.uk/">
+
+                                                            
+            <meta property="og:type" content="website">
+            <meta property="og:image" content="//www.bergzeit.co.uk/out/bergzeit/img/bergzeit_co_uk.png">
+            <meta property="og:url" content="www.bergzeit.co.uk/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B">
+        
+		<!-- RSS Feeds -->
+				
+		<!-- LINK Sources -->
+                    <link rel="shortcut icon" href="//static.bergzeit.de/out/bergzeit/img/favicon.ico?v=5300">
+        
+        
+                
+                                                                    
+                
+                <link rel="alternate" hreflang="en_SE" href="http://www.bergzeit.se/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_NO" href="http://www.bergzeit.no/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_DK" href="http://www.bergzeit.dk/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_FI" href="http://www.bergzeit.fi/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B" />
+                                                            
+                
+                <link rel="alternate" hreflang="en_IT" href="http://www.bergzeit.it/index.php?force_sid=ums20425t7ji4ai7iqrechkd15&cl=order&stoken=515D13B" />
+                    
+		<base href="https://www.bergzeit.co.uk">
+
+                
+		<!--[if lte IE 8]>
+		<script type="text/javascript">
+				document.createElement('figure');
+				document.createElement('nav');
+				document.createElement('header');
+				document.createElement('figcaption');
+			</script>
+		<![endif]-->
+
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/lang/en_UK.js"></script>
+
+									<link rel="stylesheet" type="text/css" href="//static.bergzeit.de/out/bergzeit/css/styles.css?v=5300" media="all" />
+						<script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/jQuery.all.min.js?v=5300"></script>
+		
+		<!-- 
+			<link rel="stylesheet" type="text/css" href="//static.bergzeit.de/css/jquery.jqzoom.css?v=5300" media="screen" />
+		-->
+		
+		<!-- Google Analytics Start -->
+        
+
+
+    
+    <!-- GA Analytics Start -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46020198-1', 'bergzeit.co.uk', {'name': 'TrackerCOUK'});
+        ga('TrackerCOUK.set', 'anonymizeIp', true);
+        ga('TrackerCOUK.send', 'pageview');
+
+        
+        ga('create', 'UA-46018896-1', { 'name': 'TrackerOverall'});
+        ga('TrackerOverall.set', 'anonymizeIp', true);
+        ga('TrackerOverall.send', 'pageview');
+
+        
+        ga('create', 'UA-156540-15', 'bergzeit.co.uk', { 'name': 'TrackerOld'});
+        ga('TrackerOld.set', 'anonymizeIp', true);
+        ga('TrackerOld.send', 'pageview');
+
+            </script>
+
+        <!-- Google Analytics End -->
+
+        	</head>
+  <!-- OXID eShop Enterprise Edition, Version 5, Shopping Cart System (c) OXID eSales AG 2003 - 2014 - http://www.oxid-esales.com -->
+
+	<body>
+		<!-- Facebook Root -->
+		<div id="fb-root"></div>
+
+        <!-- APE Placeholders -->
+        <div class="is_notice_modal" style="display:none;" title=""></div>
+        <div class="overlay is_overlay hide"></div>
+        
+        <!-- APE NEW-ITEM-MESSAGE -->
+        
+
+        <!-- APE COUNTRY SELECT -->
+                			
+                
+        <!-- CONTENT START -->
+		<div id="main">
+
+			<a href="#" class="btn_scrollup hide fadeout is_site_scroll"></a>
+
+                            <header class="header header_reduced">
+	
+  	<!-- User Flyout -->
+  	<nav class="nav_user">
+	<ul>
+					<li class="icon_login">
+				<a class="is_user_flyout_open konto" href="https://www.bergzeit.co.uk/my-account/" >My Account</a>
+				<div class="is_user_flyout my_account_flyout">
+			        <a href="https://www.bergzeit.co.uk/my-account/">My Account</a>
+			        <a href="https://www.bergzeit.co.uk/my-wish-list/">My wishlist</a>
+                    <a href="https://www.bergzeit.co.uk/index.php?cl=apeViewAccountVouchers">My Vouchers</a>
+			        <a href="https://www.bergzeit.co.uk/my-address/">My Settings</a>
+			        <a href="https://www.bergzeit.co.uk/order-history/">My Order History</a>
+                    <a href="https://www.bergzeit.co.uk/index.php?cl=account_newsletter">Newsletter</a>
+			        <a href="https://www.bergzeit.co.uk/index.php?cl=&amp;fnc=logout&amp;redirect=1" title="Logout">Logout</a>
+			    </div>
+			</li>
+			<li>
+				<a href="https://www.bergzeit.co.uk/index.php?cl=&amp;fnc=logout&amp;redirect=1" title="Logout">Logout</a>
+			</li>
+			</ul>
+</nav>
+	
+	<!-- Informations -->
+	<!-- TOP Navigation LEFT -->
+ 
+<!-- LOGO -->
+<div class="bz_logo">
+	<a href="http://www.bergzeit.co.uk" title="Bergzeit, the outdoor shop for climbing, mountain sports and camping">
+				<img title="Bergzeit, the outdoor shop for climbing, mountain sports and camping" alt="Bergzeit, the Outdoorshop for climbing, mountain sports and camping" src="//www.bergzeit.co.uk/out/bergzeit/img/bergzeit_co_uk.png">
+	</a>
+</div>
+
+<!-- Hints -->
+<div class="usp_wrapper">
+    <span class="icon_money">100 Day <small>money back</small></span><span class="icon_hint">Only 9,95€ shipping <small>throughout Europe</small></span><span class="icon_chat is_userchat_open"><strong>Live Chat</strong></span>
+</div>
+	
+	<!-- Navigation -->
+	
+  	<!-- Basket Flyout -->
+				
+	<div class="header_basket is_mobile_hoverable">
+		<span class="item_count">1</span>
+		<a class="basket_link" href="http://www.bergzeit.co.uk/checkout-cart-en/">
+			<span class="headline">Shopping Cart</span>
+			<span class="price">62,98 €</span>
+			<span class="link_text">show</span>
+		</a>
+		<ul>
+																													<li>
+						<a href="http://www.bergzeit.co.uk/julbo-stunt-spectron-3plus-brille-apfelgruen-blau/">
+							<img height="40px" src="https://static.bergzeit.de/out/pictures/generated/product/1/54_54_75/sol_x12472-02_pic1_1.jpg" alt="Stunt Spectron 3+ Brille apfelgrün-blau" />
+							<span class="brand">
+								<span>1x</span> Julbo							</span>
+							<span class="product_name">Stunt Spectron 3+ Brille apfelgrün-blau</span>
+							<span class="price">62,98 €</span>
+						</a>
+					</li>
+													<li class="basket_summary">
+				<span>62,98 € </span>
+            				    	<a class="button_yellow button_action" href="http://www.bergzeit.co.uk/checkout-user-en/">Go to Checkout</a>
+            				</li>
+		</ul>
+	</div>
+
+	
+</header>
+            
+			<div class="content">
+													    <div class="wide_col is_basket">
+        <div class="basket_overview">
+            <form method="post" action="https://www.bergzeit.co.uk/index.php?" class="is_form">
+
+                <input type="hidden" name="stoken" value="515D13B" />
+<input type="hidden" name="lang" value="1" />
+                <input type="hidden" name="actcontrol" value="order" />
+
+                <input type="hidden" name="cl" value="order">
+                <input type="hidden" name="ord_agb" value="1" id="orderConfirmAgbBottom">
+                <input type="hidden" name="fnc" value="execute">
+                <input type="hidden" name="challenge" value="">
+                <input type="hidden" name="sDeliveryAddressMD5" value="f73e0e9f50e80e72322940e1260b8012">
+
+                                
+                                                    
+                
+                    
+<ul class="basket_steps clearfix">
+    <li class="done">
+        <a href="http://www.bergzeit.co.uk/checkout-cart-en/">
+            <span class="headline">Step 1</span>
+            <span>Shopping Cart Overview</span>
+        </a>
+    </li>
+    <li class="done">
+        <a href="https://www.bergzeit.co.uk/checkout-user-en/">
+            <span class="headline">Step 2</span>
+            <span>Address Selection</span>
+        </a>
+    </li>
+    <li class="done">
+        <a href="https://www.bergzeit.co.uk/checkout-payment-en/" >
+        <span class="headline">Step 3</span>
+        <span>Shipping and Payment Method</span>
+        </a>
+    </li>
+    <li class="active">
+        <a href="https://www.bergzeit.co.uk/checkout-order-en/" >
+        <span class="headline">Step 4</span>
+        <span>Order Review</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="https://www.bergzeit.co.uk/checkout-order-en/" >
+        <span class="headline">Step 5</span>
+        <span>Done!</span>
+        </a>
+    </li>
+</ul>
+
+                
+                <div class="basket_submit clearfix">
+            <h3 class="headline">Review your order and place it</h3>
+        <div class="basket_submit_button">
+            </div>
+</div>
+
+                <div class="basket_change_settings clearfix">
+
+                    <div class="box_gradient box_basket">
+                        <strong class="headline">Billing Address</strong>
+                        <div class="box_gradient_content">
+                            E-mail:&nbsp;rookievn102@gmail.com<br>Mr&nbsp;Robert &nbsp;Ortega <br>Atascadero Road&nbsp;527<br>CA 93442 &nbsp;Morro Bay<br>United States<br><br> Phone: 8059344212 &nbsp;<br>
+                            <a class="link_edit" href="https://www.bergzeit.co.uk/index.php?cl=user">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="box_gradient box_basket">
+                        <strong class="headline">Delivery Address</strong>
+                        <div class="box_gradient_content">
+
+                            
+                                                            E-mail:&nbsp;rookievn102@gmail.com<br>Mr&nbsp;Robert &nbsp;Ortega <br>Atascadero Road&nbsp;527<br>CA 93442 &nbsp;Morro Bay<br>United States<br><br> Phone: 8059344212 &nbsp;<br>
+                            
+                            <a class="link_edit" href="https://www.bergzeit.co.uk/index.php?cl=user">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="box_gradient box_basket">
+                        <strong class="headline">Type of Payment and Shipping</strong>
+                        <div class="box_gradient_content">
+
+                                                        
+                            <dl>
+                                <dt>Type of Payment:</dt>
+                                <dd>Credit Card with 3D Secure/Verified by VISA</dd>
+
+                                <dt>Type of Shipping:</dt>
+                                <dd>DHL Standard</dd>
+                            </dl>
+
+                            <a class="link_edit" href="https://www.bergzeit.co.uk/index.php?cl=payment">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="box_gradient box_basket box_basket_message">
+                        <strong class="headline">Your Message to us</strong>
+                        <div class="box_gradient_content">
+                            <div class="form_row">
+                                <label for="basket_message">Your Message (optional):</label>
+                                <textarea id="basket_message" name="order_remark"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="basket_submit clearfix">
+                    
+                </div>
+
+                
+                    <div class="basket_products">
+    <table class="basket_highlight">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Single Price</th>
+                <th>VAT</th>
+                <th>Discount</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                                                
+    <tr>
+        <td class="basket_product_image">
+            <img src="https://static.bergzeit.de/out/pictures/generated/product/1/100_100_75/sol_x12472-02_pic1_1.jpg" alt="Stunt Spectron 3+ Brille apfelgrün-blau">
+        </td>
+
+        <td class="basket_product_info">
+            <a href="http://www.bergzeit.co.uk/julbo-stunt-spectron-3plus-brille-apfelgruen-blau/" class="headline" target="_blank">Stunt Spectron 3+ Brille apfelgrün-blau</a>
+            <small>Product Number: x12472-02</small>
+            
+            apfelgrün-blau
+                <span class="availability availability_in_stock" itemprop="availability" content="in_stock" quantity="4">
+        In stock, delivery time 2-5 days
+    </span>
+
+
+                            <a class="link_view" href="http://www.bergzeit.co.uk/julbo-stunt-spectron-3plus-brille-apfelgruen-blau/" target="_blank">Product Features</a>
+            
+            
+                    </td>
+
+        <td></td>
+
+        <td class="basket_refresh">
+                            1
+                    </td>
+
+        <td>62,98 €</td>
+
+        <td>0%</td>
+
+                
+        
+                
+        <td>0,00 €</td>
+
+        <td><b>62,98 €</b></td>
+    </tr>
+
+                
+                                
+                                
+                                    <tr class="basket_product_change_product">
+                        <td colspan="8"><a href="http://www.bergzeit.co.uk/checkout-cart-en/" class="action_link">Change item</a></td>
+                    </tr>
+                
+                    </tbody>
+
+            </table>
+    <button id="basketRemove" type="submit" name="removeBtn" class="hide"></button>
+</div>
+                
+
+                <div class="basket_products basket_products_single">
+                    <table class="basket_highlight">
+                        <tbody>
+                            <tr class="basket_amount">
+    <td colspan="7">
+        <p>
+                    </p>
+        <dl>
+                        
+                        <dt>Net value of goods:</dt>
+            <dd>62,98 €</dd>
+
+                                        <dt>VAT 0%:</dt>
+                <dd>0,00 €</dd>
+            
+                                    <dt>Shipping costs:</dt>
+                            <dd>19,95 €</dd>
+            
+                        
+                        
+                        
+                        <dt class="total"><b>Amount due:</b></dt>
+            <dd class="total"><b>82,93 €</b></dd>
+        </dl>
+
+                    <div>
+                                    <p>
+                        There are some additional costs or taxes, which are not charged by us.
+                    </p>
+                                <a class="button_yellow button_action is_form_submit" href="http://www.bergzeit.co.uk/checkout-order-en/">Buy</a>
+            </div>
+            </td>
+</tr>
+                        </tbody>
+                    </table>
+
+                    <div class="basket_submit clearfix">
+        <div class="basket_submit_button">
+            </div>
+</div>
+                </div>
+                
+<div class="basket_info_boxes clearfix">
+
+    <div class="box_gradient box_basket box_basket_short">
+        <div class="box_gradient_content">
+            <p>
+                <b>Expected shipping date:</b>
+                <br />
+
+                                    Monday, 14. April 2014
+                
+                        </div>
+    </div>
+
+    <div class="box_gradient box_basket box_basket_long">
+        <div class="box_gradient_content">
+            <div class="keyval1 is_userchat_open">
+                <span>Advice from outdoor experts</span> Live-chat
+            </div>
+
+            <div class="keyval2">
+                <span>Free shipping</span> on orders > 50€ to </br>DE,AT,BE,CH,DK,IT and NL
+            </div>
+
+            <div class="keyval3">
+                <span>Secure Payment</span> SSL encryption & 3D-Secure
+            </div>
+
+            <div class="keyval4">
+                <span>Money Back Guarantee</span> within 100 days
+            </div>
+        </div>
+    </div>
+
+</div>
+                <div class="basket_footer">
+    <span>Do you have questions regarding your order? The Bergzeit Team will be glad to help you out. Give us a call: +49 8024 - 902290</span>
+    <ul>
+        <li>
+            <a href="http://www.bergzeit.co.uk/AGBs/#Datenschutz" target="_blank">Data Security</a>
+        </li>
+        <li>
+            <a href="http://www.bergzeit.co.uk/AGBs/#Widerrufsbelehrung" target="_blank">Notice of Withdrawal</a>
+        </li>
+        <li>
+            <a href="http://www.bergzeit.co.uk/Impressum/" target="_blank">Imprint</a>
+        </li>
+    </ul>
+
+    <a href="http://www.bergzeit.co.uk">Back to the Shop</a>
+</div>
+            </form>
+        </div>
+    </div>
+    
+	
+											</div>
+
+                            <div class="footer"></div>
+            		</div>
+		<!-- CONTENT END -->
+
+		
+			<script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/Bergzeit.min.js?v=5300"></script>
+			
+			
+		
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/widgets/oxinputvalidator.js"></script>
+		<script type="text/javascript">
+			$('form.js-oxValidate').oxInputValidator();
+		</script>
+
+        <script type="text/javascript" src="//static.bergzeit.de/out/bergzeit/js/widgets/oxcountrystateselect.js"></script>
+
+        <!-- Partner Bergzeit Start -->
+		        <script language="JavaScript" src="//static.bergzeit.de/out/bergzeit/js/Netslave.js?cpid=1"></script>
+        <script language="JavaScript">if (typeof pid!='undefined') document.write("<img src='//partner.bergzeit.de/go.cgi?cpid=1&pid="+pid+"&subid="+subid+"&wmid=bcc&target="+encodeURI(document.location.href)+"&ref="+encodeURI(document.referrer)+"' height='1' width='1' border='0'>");</script>
+		<!-- Partner Bergzeit End -->
+
+		<!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KMM4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KMM4');</script>
+        <!-- End Google Tag Manager -->
+
+		<!-- Userlike Start -->
+			<!-- <div id="replace_userlike"></div> -->
+    <a href="javascript:void(0);" id="userlikeCustomTab" class="userlike_chat_button" data-right="64" data-top="105" data-orientation="right" data-callback="userlikeButtonHandler"></a>
+    <script type="text/javascript">
+
+        var userlikeData = {};
+        userlikeData.custom = {};
+
+                    userlikeData.user = {
+                name: "Robert  Ortega ",
+                email: "rookievn102@gmail.com"
+            }
+            userlikeData.custom = {
+                custnr: "2473746"
+            }
+        
+                    userlikeData.custom.basket = {"604ff0352ff2ae683a3339768ba968c2":{"productid":"604ff0352ff2ae683a3339768ba968c2","productname":"Stunt Spectron 3+ Brille apfelgr\u00c3\u00bcn-blau, apfelgr\u00c3\u00bcn-blau","productlink":"http:\/\/www.bergzeit.co.uk\/julbo-stunt-spectron-3plus-brille-apfelgruen-blau\/","productunitprice":"62,98"}};
+        
+        function userlikeButtonHandler(visible) {
+
+            userlikeCheckOperatorStatus(function(operators) {
+
+                var blOnline = false;
+                if(operators.length > 0) {
+                    jQuery.each(operators, function() {
+
+                        if(this.slots.online == 1) {
+                            blOnline = true;
+                            return false;
+                        }
+                    });
+                }
+
+                if(blOnline) {
+                    jQuery('#userlikeCustomTab').addClass('online');
+                }
+            });
+        }
+    </script>
+    <script rel="dns-prefetch" type="text/javascript" src="//s3-eu-west-1.amazonaws.com/userlike-cdn-widgets/c6bd329b1abcbbbb3870a68fb6eedae6e4585d2cee0e386dff9df3b38f6fa7fa.js"></script>
+
+
+        <!-- Userlike End -->
+
+                    <!-- Google Code for Smart Pixel -->
+                            <script type="text/javascript">
+	var google_tag_params = {
+									pagetype: 'cart',
+										prodid: 'x12472-00',
+				price: '62.98'
+						};
+</script>
+                    
+		<!-- APE Last-Check -->
+		<div class="selenium-last-check"></div>
+
+	</body>
+</html>

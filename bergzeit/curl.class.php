@@ -195,7 +195,8 @@ class curl {
     return $agent;
 }function createtxt()
 {
-    $cookie_file_path = "cache/" . md5(time() . rand(0, 999)) . "_" . rand(0, 999) . "_cookie.txt";
+//    $cookie_file_path = "" . md5(time() . rand(0, 999)) . "_" . rand(0, 999) . "_cookie.txt";
+    $cookie_file_path = "cookie.txt";
     $fp = fopen($cookie_file_path, 'wb');
     fclose($fp);
     return $cookie_file_path;
