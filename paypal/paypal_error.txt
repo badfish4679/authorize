@@ -1,0 +1,15 @@
+http://ugadmin.blogspot.com/
+
+1~> nếu như nó báo thế này : We were unable to verify the billing address for this credit card. Please enter the address where you receive billing statements for this credit card below. Please refer to the automatic email we have sent to assist you.
+---> Quá là ok rồi, con CVV này good rồi, bước tiếp theo chỉ việc thay billing address thôi, tick vào phần " Enter a new address as billing address " rồi gõ ðúng địa chỉ của thằng chủ thẻ là ok bạn đã có một con PP để đi ship hàng hoặc order. sau khi add xong nó sẽ hiện lên dòng này ở trên đầu : "You have successfully added a credit card. Please note that this credit card is now your primary card. For more information on your primary card, please refer to your Profile."
+
+2~> nếu nó báo như thế này thì card có vấn đề :
+++ Before you can add this credit card to another account, you must contact the PayPal Credit Card Team at cardproblems@paypal.com. A customer service representative will respond to your request shortly. If you would rather add a different credit card to your PayPal account, you may do so at any time. Thank you for your cooperation.
+--> Lúc này thì bỏ qua con này đi, chả mua sắm được gì bằng con này đâu.
+hoặc nó báo :
+++ This credit card has been denied by the bank that issued your credit card. For details on why your card was denied, please contact your credit card issuer's customer service department. Or, you may want to try adding a different credit card.
+thì con này đã tử trận, chủ thẻ nó đã phong tỏa cái thẻ rùi .
+
+3~> nếu nó báo thế này :
+That credit card number is already assigned to another PayPal account. For security purposes, each credit card may only be assigned to one PayPal account. Please use a different card.
+--> Tức là con PP này được add vào tài khoản khác rồi, nhưng vẫn sống,tức là mình vẫn có thể dùng CVV ðể mua đồ ở các shop cho mua bằng CVV rồi.
