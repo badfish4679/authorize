@@ -12,7 +12,7 @@ class Yahoo
     /* Links */
     private $url = array(
         'login'     => 'https://login.yahoo.com',
-        'submitlogin'    => 'https://login.yahoo.com/config/login?'
+        'submitlogin'    => 'https://login.yahoo.com/config/login'
     );
 
     /* Fields */
@@ -27,14 +27,14 @@ class Yahoo
     }
     public function login(){
         $this->cURL($this->url['login']);
+//        var_dump($this->cookies);
+
         if($form = $this->getElement($this->content,'form','method',"post"))
         {
             $fields = $this->getInputs($form);
             $fields['login'] = $this->user;
             $fields['passwd'] =$this->pass;
-            $this->cURL($this->url['submitlogin'], $fields);
-//            preg_match_all("/replace\(\"(.*?)\"/", $this->content, $arr_url);
-//            $WelcomeURL = $arr_url[1][0];
+            $this->cURL($this->url['submitlogin'], $fields,'https://login.yahoo.com/');
 
             echo $this->content;exit;
         }
@@ -66,9 +66,10 @@ class Yahoo
         }
 
     }
-    public function cURL($url, $post = false)
+    public function cURL($url, $post = false, $ref = "")
     {
         $ch = curl_init();
+
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
         curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -76,9 +77,10 @@ class Yahoo
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($ch, CURLOPT_VERBOSE, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($ch, CURLOPT_COOKIEJAR, $this->cookies);
-        curl_setopt($ch, CURLOPT_COOKIEFILE, $this->cookies);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
+//        curl_setopt($ch, CURLOPT_COOKIEJAR, $this->cookies);
+//        curl_setopt($ch, CURLOPT_COOKIEFILE, $this->cookies);
+        curl_setopt($ch, CURLOPT_COOKIE, $this->cookies);
+        curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 120);
         curl_setopt($ch, CURLOPT_TIMEOUT, 120);
@@ -88,9 +90,15 @@ class Yahoo
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
         }
+        if($ref != ""){
+            curl_setopt($ch, CURLOPT_REFERER, $ref);
+        }
 
         curl_setopt($ch, CURLOPT_URL, $url);
         $this->content = curl_exec($ch);
+        preg_match('/^Set-Cookie:\s*([^;]*)/mi', $this->content, $m);
+        $this->cookies = $m[1];
+//        parse_str($m[1], $this->cookies);
         $this->response = curl_getinfo( $ch );
         $this->url['last_url'] = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
         curl_close($ch);
