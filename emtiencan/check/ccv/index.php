@@ -2,9 +2,10 @@
 session_start();
 ?>
 <html>
-<head><title>--[ Search BIN Info - Code by EmXinhTT.Net ]--</title>
+<head>
+    <title>--[ Search BIN Info - Code by EmXinhTT.Net ]--</title>
 <link rel="stylesheet" type="text/css" href="default1.css">
-</style>
+
 </head>
 <body>
 <center>

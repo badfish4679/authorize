@@ -196,7 +196,7 @@
                     else{
                         var aDate = arrCols[$('#ccmonth').val()].trim().split("/");
                         var month = aDate[0].trim();
-                        if(month.length < 2) month = "0"+month;
+            dr            if(month.length < 2) month = "0"+month;
                         var year = aDate[1].trim();
 //                        year = year.substr((year.length-2),2);
                         html+=     '<td><input  type="text" id="waitdate'+(i+1)+'" value="'+month+'/'+year+'" style="width:70px"></td>';
