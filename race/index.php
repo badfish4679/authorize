@@ -2,22 +2,22 @@
 session_start();
 require('DB.php');
 if(!isset($_GET['key'])){
-    header("Location: key.php");
+    header("Location: key");
     return;
 }
 else{
     $db = connect();
-    $sql = "SELECT * FROM `mykeys` WHERE keys='" . mysql_real_escape_string($_GET['key']) . "' ";
+    $sql = "SELECT * FROM `mykeys` WHERE keys='" . mysql_escape_string($_GET['key']) . "' ";
     $key = null;
     foreach ($db->query($sql) as $row) {
         $key = $row;
     }
     if($key==null){
-        header("Location: key.php?error=1");
+        header("Location: key?error=1");
         return;
     }
     if($key['leftamount']<=0){
-        header("Location: key.php?error=2");
+        header("Location: key?error=2");
         return;
     }
 }
@@ -306,7 +306,7 @@ function percent($num_amount, $num_total)
     return $count;
 }
 
-if ($_POST['cclist']){
+if (isset($_POST['cclist'])){
 
 $cclist = trim($_POST['cclist']);
 $cclist = str_replace(array("\\\"", "\\'"), array("\"", "'"), $cclist);

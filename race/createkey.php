@@ -2,7 +2,7 @@
 require('DB.php');
 $db = connect();
 if (isset($_POST['passwd'])) {
-    $sql = "SELECT count(cname) FROM `config` WHERE cname='passwd' AND cvalue='" . mysql_real_escape_string($_POST['passwd']) . "' ";
+    $sql = "SELECT count(cname) FROM `config` WHERE cname='passwd' AND cvalue='" . mysql_escape_string($_POST['passwd']) . "' ";
     $flag = false;
     foreach ($db->query($sql) as $row) {
         if ($row[0] > 0) $flag = true;
@@ -14,7 +14,7 @@ if (isset($_POST['passwd'])) {
         }
         if (isset($_POST['submit'])) {
             try {
-                $sql = "INSERT INTO `mykeys` (`keys`,`amount`,`leftamount`,`keytype`) VALUES ('" . mysql_real_escape_string($_POST['key']) . "','" . mysql_real_escape_string($_POST['amount']) . "','" . mysql_real_escape_string($_POST['amount']) . "','" . mysql_real_escape_string($_POST['keytype']) . "')";
+                $sql = "INSERT INTO `mykeys` (`keys`,`amount`,`leftamount`,`keytype`) VALUES ('" . mysql_escape_string($_POST['key']) . "','" . mysql_escape_string($_POST['amount']) . "','" . mysql_escape_string($_POST['amount']) . "','" . mysql_escape_string($_POST['keytype']) . "')";
 //            echo $sql;
                 $count = $db->exec($sql);
 //                var_dump($count);

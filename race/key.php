@@ -26,12 +26,20 @@
         ?>
     </p>
 
-    <form method="GET" action="index.php">
+    <form method="GET" action="check" >
         <p style="color:red;"><?php if (isset($flag) && !$flag) echo 'Sai mật khẩu!';
             else echo ''; ?></p>
-        <input name="key" placeholder="Input key here..">
+        <input name="key" id="key" placeholder="Input key here..">
         <input type="submit" name="submit" value="  GO!  ">
 
     </form>
 </center>
 </html>
+<script>
+    function mysubmit(){
+        var key = document.getElementById('key').value;
+        window.location = "check/"+key;
+        alert(key);
+        return false;
+    }
+</script>
