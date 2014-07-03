@@ -317,7 +317,7 @@ $relog = 0;
 $tongso = count($cclist);
 echo  $key['leftamount'];
 if($tongso > $key['leftamount']){
-    header("Location: key.php?error=3");
+    header("Location: key?error=3");
     return;
 }
 foreach ($cclist as $ccline) {
