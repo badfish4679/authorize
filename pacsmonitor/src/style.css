@@ -1,0 +1,241 @@
+body {
+ background: none repeat scroll 0 0 #E4E8EC;
+ margin: 20px;
+ font-family: Arial, Verdana, Sans-serif;
+ font-size: 14px;
+ color: #4F5155;
+ margin-bottom: 20px;
+}
+
+a {
+ color: #003399;
+ background-color: transparent;
+ font-weight: normal;
+}
+
+h1 {
+ color: #444;
+ font-size: 200%;
+ font-weight: bold;
+ margin: 24px 0 2px 0;
+ padding: 5px 0 10px 0;
+
+}
+
+code {
+ font-family: Monaco, Verdana, Sans-serif;
+ font-size: 12px;
+ background-color: #f9f9f9;
+ border: 1px solid #D0D0D0;
+ color: #002166;
+ display: block;
+ margin: 14px 0 14px 0;
+ padding: 12px 10px 12px 10px;
+}
+.wrap{
+    display: block;
+}
+#logoarea{
+    float:right;
+    margin-right: 20px;
+}
+#logoarea img{
+    width:48px;
+    height:48px;
+    display:inline-block;
+    margin-right:20px;
+}
+.center{
+    text-align: center;
+}
+.icon24{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    cursor: pointer;
+    margin: auto;
+}
+.iconplay{
+    background: url("img/play.png") no-repeat;
+}
+.iconstop{
+    background: url("img/stop.png") no-repeat;
+}
+.cornerall{
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.cornertopleft{
+	border-top-left-radius: 10px;
+}
+.cornertopright{
+	border-top-right-radius: 10px;
+}
+.cornerbottomleft{
+	border-bottom-left-radius: 10px;
+}
+.cornerbottomright{
+	border-bottom-right-radius: 10px;
+}
+#leftside{
+	float:left;
+	width:49%;
+}
+#rightside{
+	float:left;
+	width:49%;
+}
+.blockmoniter{
+	background:#fff;
+	margin:5px;
+	min-height:200px;
+}
+.border{
+	border: 1px solid #D8E2E8;
+}
+.borderbot{
+	display:block;
+	height:1px;
+	border-bottom:1px solid #D8E2E8;
+	clear:both;
+}
+.blocktitle{
+	background:#333;
+	color:#eee;
+	text-align:center;
+	font-size:120%;
+	font-weight:bold;
+	padding:3px;
+	background-image: linear-gradient(bottom, #6B6F7A 0%, #333333 64%);
+	background-image: -o-linear-gradient(bottom, #6B6F7A 0%, #333333 64%);
+	background-image: -moz-linear-gradient(bottom, #6B6F7A 0%, #333333 64%);
+	background-image: -webkit-linear-gradient(bottom, #6B6F7A 0%, #333333 64%);
+	background-image: -ms-linear-gradient(bottom, #6B6F7A 0%, #333333 64%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #6B6F7A),
+		color-stop(0.64, #333333)
+	);
+}
+.iconmodule{
+	display:block;
+	width:32px;
+	height:32px;
+	margin:auto;
+}
+.blockline{
+	display:block;
+	overflow:hidden;	
+	position: relative;
+}
+	.blockname{
+		position:absolute;
+		left:relative;
+		height:100%;
+		background:#eee;
+		border-right:1px dotted #aaa;
+		float:left;
+		width:15%;
+		padding:5px;
+		text-align:center;
+		vertical-align:middle;
+		font-weight:bold;
+		padding-top:10px;
+		text-transform:uppercase;
+	}
+	.blockcontent{
+		padding:5px;
+		display:block;
+		float:right;
+		width:80%;
+		min-height:80px;
+	}
+	.blockstatus{
+		float:right;
+		display:block;
+		text-transform:italic;
+		font-size:75%;
+		text-indent:28px;
+		color:#000;
+		padding:2px;
+		cursor:pointer;
+		width:20%;
+		text-align:left;
+	}
+	.bstatus_on{
+		background: url('img/bullet_green.png') no-repeat center left;
+	}
+	.bstatus_off{
+		background: url('img/bullet_red.png') no-repeat center left;
+	}
+        .blockitem{
+            width:75%;
+            display:block;
+            vertical-align: middle;
+            text-align: center;
+        }
+	.item{
+		display:block;
+		overflow:hidden;
+		width:95%;
+                    text-align: left;
+                    vertical-align:middle;
+	}
+		.itemstatus{
+			display:inline-block;
+			float:left;
+			width:24px;
+			padding:3px;
+			margin:3px;
+			height:24px;
+			vertical-align:baseline;
+			line-height:24px;
+			text-align:center;
+		}
+		.pingconnect{
+			background: url('img/connect.png') no-repeat top left;
+		}
+		.pingdisconnect{
+			background: url('img/disconnect.png') no-repeat top left;
+		}
+		.processok{
+			background: url('img/processok.png') no-repeat top left;
+		}
+		.processnook{
+			background: url('img/processnook.png') no-repeat top left;
+		}
+		.folderok{
+			background: url('img/folderok.png') no-repeat top left;
+		}
+		.foldernook{
+			background: url('img/foldernook.png') no-repeat top left;
+		}
+		.bggreen{
+			/*background:#4dab53;*/
+			color: #4dab53 !important;
+		}
+		.bgred{
+			/*background:#e33939;*/
+			color:#e33939 !important;
+		}
+		.itemcontent{
+                            background: #fafafa;
+			display:inline-block;
+			float:left;
+			width:65%;
+			padding:3px;
+			border:1px solid #aaa;
+			margin:3px;
+			height:24px;
+			vertical-align:middle;
+			line-height:24px;
+			color:#000;
+			font-weight:bold;
+			text-indent:12px;
+		}
+		#chartcontent{
+			text-align:center;
+		}
